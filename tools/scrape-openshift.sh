@@ -6,15 +6,18 @@ VERSION="v$1"
 
 DIR="$(dirname "$(dirname "$0")")"/openshift-origin-"$VERSION"
 
-NAME="origin-$VERSION" 
+NAME="origin-$VERSION"
 
 # This may fail with "Conflict. The container name "/origin-v1.2.0" is already in use by container ..."
-docker ps | grep "$NAME" ||
-sudo docker run -d --name "$NAME" \
-        --privileged --pid=host --net=host \
-        -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys -v /var/lib/docker:/var/lib/docker:rw \
-        -v /var/lib/origin/openshift.local.volumes:/var/lib/origin/openshift.local.volumes \
-        "docker.io/openshift/origin:$VERSION" start
+if docker ps -a | grep "$NAME"; then
+  docker start "$NAME"
+else
+  sudo docker run -d --name "$NAME" \
+       --privileged --pid=host --net=host \
+       -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys -v /var/lib/docker:/var/lib/docker:rw \
+       -v /var/lib/origin/openshift.local.volumes:/var/lib/origin/openshift.local.volumes \
+       "docker.io/openshift/origin:$VERSION" start
+fi
 
 mkdir -p "$DIR"
 cd "$DIR"
@@ -47,3 +50,6 @@ done
 find -type f
 
 docker stop "$NAME"
+
+echo "# When done run:"
+echo "docker rm -f '$NAME'"
