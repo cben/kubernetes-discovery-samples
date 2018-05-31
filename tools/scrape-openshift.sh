@@ -23,8 +23,12 @@ while ! curl --insecure https://localhost:8443 -o .json; do
   sleep 1
 done
 
+for PTH in $(jq --raw-output '.paths[] | ltrimstr("/")' .json) version version/openshift; do
+  mkdir -p "$PTH"
+  curl --insecure "https://localhost:8443/$PTH" -o "$PTH.json"
+done
+
 for GROUP in api oapi; do
-  curl --insecure "https://localhost:8443/$GROUP" -o "$GROUP.json"
   mkdir -p "$GROUP"
   for APIVER in $(jq --raw-output '.versions[]' "$GROUP.json"); do
     curl --insecure "https://localhost:8443/$GROUP/$APIVER" -o "$GROUP"/"$APIVER".json
