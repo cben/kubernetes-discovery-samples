@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "name": "extensions",
+  "versions": [
+    {
+      "groupVersion": "extensions/v1beta1",
+      "version": "v1beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "extensions/v1beta1",
+    "version": "v1beta1"
+  },
+  "serverAddressByClientCIDRs": null
+}
