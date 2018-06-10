@@ -9,8 +9,8 @@ To help answer questions like "can I assume `verbs` was always there? When was i
 # How?
 
 See [tools/](tools/) directory.
-I'm starting from openshift, not kubernetes
-
+I started from openshift, not kubernetes, because it can be run as a convenient [all-in-one container](https://docs.openshift.org/3.7/getting_started/administrators.html#running-in-a-docker-container).
+TODO: add kubernetes, [rancher](rancher.com), etc...
 *PRs welcome!*
 
 # License
