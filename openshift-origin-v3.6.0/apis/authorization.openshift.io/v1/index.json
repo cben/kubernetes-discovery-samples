@@ -1,0 +1,182 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "authorization.openshift.io/v1",
+  "resources": [
+    {
+      "name": "clusterpolicies",
+      "namespaced": false,
+      "kind": "ClusterPolicy",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "clusterpolicybindings",
+      "namespaced": false,
+      "kind": "ClusterPolicyBinding",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "clusterrolebindings",
+      "namespaced": false,
+      "kind": "ClusterRoleBinding",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "clusterroles",
+      "namespaced": false,
+      "kind": "ClusterRole",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "localresourceaccessreviews",
+      "namespaced": true,
+      "kind": "LocalResourceAccessReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "localsubjectaccessreviews",
+      "namespaced": true,
+      "kind": "LocalSubjectAccessReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "policies",
+      "namespaced": true,
+      "kind": "Policy",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "policybindings",
+      "namespaced": true,
+      "kind": "PolicyBinding",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "resourceaccessreviews",
+      "namespaced": true,
+      "kind": "ResourceAccessReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "rolebindingrestrictions",
+      "namespaced": true,
+      "kind": "RoleBindingRestriction",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "rolebindings",
+      "namespaced": true,
+      "kind": "RoleBinding",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "roles",
+      "namespaced": true,
+      "kind": "Role",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "selfsubjectrulesreviews",
+      "namespaced": true,
+      "kind": "SelfSubjectRulesReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "subjectaccessreviews",
+      "namespaced": true,
+      "kind": "SubjectAccessReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "subjectrulesreviews",
+      "namespaced": true,
+      "kind": "SubjectRulesReview",
+      "verbs": [
+        "create"
+      ]
+    }
+  ]
+}

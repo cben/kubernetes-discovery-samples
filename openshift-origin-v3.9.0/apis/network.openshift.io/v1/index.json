@@ -1,0 +1,71 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "network.openshift.io/v1",
+  "resources": [
+    {
+      "name": "clusternetworks",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "ClusterNetwork",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "egressnetworkpolicies",
+      "singularName": "",
+      "namespaced": true,
+      "kind": "EgressNetworkPolicy",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "hostsubnets",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "HostSubnet",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "netnamespaces",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "NetNamespace",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "apps.openshift.io/v1",
+  "resources": [
+    {
+      "name": "deploymentconfigs",
+      "namespaced": true,
+      "kind": "DeploymentConfig",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "deploymentconfigs/instantiate",
+      "namespaced": true,
+      "kind": "DeploymentRequest",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "deploymentconfigs/log",
+      "namespaced": true,
+      "kind": "DeploymentLog",
+      "verbs": [
+        "get"
+      ]
+    },
+    {
+      "name": "deploymentconfigs/rollback",
+      "namespaced": true,
+      "kind": "DeploymentConfigRollback",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "deploymentconfigs/scale",
+      "namespaced": true,
+      "kind": "Scale",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "deploymentconfigs/status",
+      "namespaced": true,
+      "kind": "DeploymentConfig",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

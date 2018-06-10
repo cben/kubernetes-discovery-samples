@@ -1,0 +1,71 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "oauth.openshift.io/v1",
+  "resources": [
+    {
+      "name": "oauthaccesstokens",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "OAuthAccessToken",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "oauthauthorizetokens",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "OAuthAuthorizeToken",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "oauthclientauthorizations",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "OAuthClientAuthorization",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "oauthclients",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "OAuthClient",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "apps",
+  "versions": [
+    {
+      "groupVersion": "apps/v1beta1",
+      "version": "v1beta1"
+    },
+    {
+      "groupVersion": "apps/v1beta2",
+      "version": "v1beta2"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "apps/v1beta1",
+    "version": "v1beta1"
+  },
+  "serverAddressByClientCIDRs": null
+}

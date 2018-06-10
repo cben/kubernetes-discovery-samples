@@ -1,0 +1,230 @@
+{
+  "swaggerVersion": "1.2",
+  "apis": [
+   {
+    "path": "/version",
+    "description": "git code version from which this is built"
+   },
+   {
+    "path": "/apis",
+    "description": "get available API versions"
+   },
+   {
+    "path": "/api/v1",
+    "description": "API at /api/v1"
+   },
+   {
+    "path": "/api",
+    "description": "get available API versions"
+   },
+   {
+    "path": "/apis/authentication.k8s.io/v1",
+    "description": "API at /apis/authentication.k8s.io/v1"
+   },
+   {
+    "path": "/apis/authentication.k8s.io/v1beta1",
+    "description": "API at /apis/authentication.k8s.io/v1beta1"
+   },
+   {
+    "path": "/apis/authentication.k8s.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/authorization.k8s.io/v1",
+    "description": "API at /apis/authorization.k8s.io/v1"
+   },
+   {
+    "path": "/apis/authorization.k8s.io/v1beta1",
+    "description": "API at /apis/authorization.k8s.io/v1beta1"
+   },
+   {
+    "path": "/apis/authorization.k8s.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/autoscaling/v1",
+    "description": "API at /apis/autoscaling/v1"
+   },
+   {
+    "path": "/apis/autoscaling",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/batch/v1",
+    "description": "API at /apis/batch/v1"
+   },
+   {
+    "path": "/apis/batch/v2alpha1",
+    "description": "API at /apis/batch/v2alpha1"
+   },
+   {
+    "path": "/apis/batch",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/certificates.k8s.io/v1beta1",
+    "description": "API at /apis/certificates.k8s.io/v1beta1"
+   },
+   {
+    "path": "/apis/certificates.k8s.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/extensions/v1beta1",
+    "description": "API at /apis/extensions/v1beta1"
+   },
+   {
+    "path": "/apis/extensions",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/policy/v1beta1",
+    "description": "API at /apis/policy/v1beta1"
+   },
+   {
+    "path": "/apis/policy",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/rbac.authorization.k8s.io/v1beta1",
+    "description": "API at /apis/rbac.authorization.k8s.io/v1beta1"
+   },
+   {
+    "path": "/apis/rbac.authorization.k8s.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/storage.k8s.io/v1beta1",
+    "description": "API at /apis/storage.k8s.io/v1beta1"
+   },
+   {
+    "path": "/apis/storage.k8s.io/v1",
+    "description": "API at /apis/storage.k8s.io/v1"
+   },
+   {
+    "path": "/apis/storage.k8s.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/apps/v1beta1",
+    "description": "API at /apis/apps/v1beta1"
+   },
+   {
+    "path": "/apis/apps",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/security.openshift.io/v1",
+    "description": "API at /apis/security.openshift.io/v1"
+   },
+   {
+    "path": "/apis/security.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/build.openshift.io/v1",
+    "description": "API at /apis/build.openshift.io/v1"
+   },
+   {
+    "path": "/apis/build.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/user.openshift.io/v1",
+    "description": "API at /apis/user.openshift.io/v1"
+   },
+   {
+    "path": "/apis/user.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/apps.openshift.io/v1",
+    "description": "API at /apis/apps.openshift.io/v1"
+   },
+   {
+    "path": "/apis/apps.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/authorization.openshift.io/v1",
+    "description": "API at /apis/authorization.openshift.io/v1"
+   },
+   {
+    "path": "/apis/authorization.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/oauth.openshift.io/v1",
+    "description": "API at /apis/oauth.openshift.io/v1"
+   },
+   {
+    "path": "/apis/oauth.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/project.openshift.io/v1",
+    "description": "API at /apis/project.openshift.io/v1"
+   },
+   {
+    "path": "/apis/project.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/quota.openshift.io/v1",
+    "description": "API at /apis/quota.openshift.io/v1"
+   },
+   {
+    "path": "/apis/quota.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/network.openshift.io/v1",
+    "description": "API at /apis/network.openshift.io/v1"
+   },
+   {
+    "path": "/apis/network.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/route.openshift.io/v1",
+    "description": "API at /apis/route.openshift.io/v1"
+   },
+   {
+    "path": "/apis/route.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/image.openshift.io/v1",
+    "description": "API at /apis/image.openshift.io/v1"
+   },
+   {
+    "path": "/apis/image.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/template.openshift.io/v1",
+    "description": "API at /apis/template.openshift.io/v1"
+   },
+   {
+    "path": "/apis/template.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/oapi/v1",
+    "description": "OpenShift REST API, version v1"
+   },
+   {
+    "path": "/oapi",
+    "description": "get available API versions"
+   },
+   {
+    "path": "/version/openshift",
+    "description": "git code version from which this is built"
+   }
+  ],
+  "apiVersion": "",
+  "info": {
+   "title": "",
+   "description": ""
+  }
+ }

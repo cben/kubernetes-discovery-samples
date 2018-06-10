@@ -1,0 +1,20 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "autoscaling",
+  "versions": [
+    {
+      "groupVersion": "autoscaling/v1",
+      "version": "v1"
+    },
+    {
+      "groupVersion": "autoscaling/v2beta1",
+      "version": "v2beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "autoscaling/v1",
+    "version": "v1"
+  },
+  "serverAddressByClientCIDRs": null
+}

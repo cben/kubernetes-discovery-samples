@@ -1,0 +1,49 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "security.openshift.io/v1",
+  "resources": [
+    {
+      "name": "podsecuritypolicyreviews",
+      "namespaced": true,
+      "kind": "PodSecurityPolicyReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "podsecuritypolicyselfsubjectreviews",
+      "namespaced": true,
+      "kind": "PodSecurityPolicySelfSubjectReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "podsecuritypolicysubjectreviews",
+      "namespaced": true,
+      "kind": "PodSecurityPolicySubjectReview",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "securitycontextconstraints",
+      "namespaced": false,
+      "kind": "SecurityContextConstraints",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ],
+      "shortNames": [
+        "scc"
+      ]
+    }
+  ]
+}

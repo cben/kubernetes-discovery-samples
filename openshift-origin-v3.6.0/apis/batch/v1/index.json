@@ -1,0 +1,32 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "batch/v1",
+  "resources": [
+    {
+      "name": "jobs",
+      "namespaced": true,
+      "kind": "Job",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "jobs/status",
+      "namespaced": true,
+      "kind": "Job",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

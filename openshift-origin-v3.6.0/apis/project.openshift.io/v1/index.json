@@ -1,0 +1,30 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "project.openshift.io/v1",
+  "resources": [
+    {
+      "name": "projectrequests",
+      "namespaced": false,
+      "kind": "ProjectRequest",
+      "verbs": [
+        "create",
+        "list"
+      ]
+    },
+    {
+      "name": "projects",
+      "namespaced": false,
+      "kind": "Project",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

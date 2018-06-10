@@ -1,0 +1,101 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "image.openshift.io/v1",
+  "resources": [
+    {
+      "name": "images",
+      "namespaced": false,
+      "kind": "Image",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "imagesignatures",
+      "namespaced": false,
+      "kind": "ImageSignature",
+      "verbs": [
+        "create",
+        "delete"
+      ]
+    },
+    {
+      "name": "imagestreamimages",
+      "namespaced": true,
+      "kind": "ImageStreamImage",
+      "verbs": [
+        "get"
+      ]
+    },
+    {
+      "name": "imagestreamimports",
+      "namespaced": true,
+      "kind": "ImageStreamImport",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "imagestreammappings",
+      "namespaced": true,
+      "kind": "ImageStreamMapping",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "imagestreams",
+      "namespaced": true,
+      "kind": "ImageStream",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "imagestreams/secrets",
+      "namespaced": true,
+      "kind": "SecretList",
+      "verbs": [
+        "get"
+      ]
+    },
+    {
+      "name": "imagestreams/status",
+      "namespaced": true,
+      "kind": "ImageStream",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "imagestreamtags",
+      "namespaced": true,
+      "kind": "ImageStreamTag",
+      "verbs": [
+        "create",
+        "delete",
+        "get",
+        "list",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

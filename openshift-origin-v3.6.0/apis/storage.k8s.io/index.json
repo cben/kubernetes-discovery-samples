@@ -1,0 +1,20 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "storage.k8s.io",
+  "versions": [
+    {
+      "groupVersion": "storage.k8s.io/v1beta1",
+      "version": "v1beta1"
+    },
+    {
+      "groupVersion": "storage.k8s.io/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "storage.k8s.io/v1",
+    "version": "v1"
+  },
+  "serverAddressByClientCIDRs": null
+}

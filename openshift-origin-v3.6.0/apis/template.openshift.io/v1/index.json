@@ -1,0 +1,30 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "template.openshift.io/v1",
+  "resources": [
+    {
+      "name": "processedtemplates",
+      "namespaced": true,
+      "kind": "Template",
+      "verbs": [
+        "create"
+      ]
+    },
+    {
+      "name": "templates",
+      "namespaced": true,
+      "kind": "Template",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

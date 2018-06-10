@@ -1,0 +1,10 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "forbidden: User \"system:anonymous\" cannot get path \"/controllers\": User \"system:anonymous\" cannot \"get\" on \"/controllers\"",
+  "reason": "Forbidden",
+  "details": {},
+  "code": 403
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "quota.openshift.io/v1",
+  "resources": [
+    {
+      "name": "appliedclusterresourcequotas",
+      "namespaced": true,
+      "kind": "AppliedClusterResourceQuota",
+      "verbs": [
+        "get",
+        "list"
+      ]
+    },
+    {
+      "name": "clusterresourcequotas",
+      "namespaced": false,
+      "kind": "ClusterResourceQuota",
+      "verbs": [
+        "create",
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "clusterresourcequotas/status",
+      "namespaced": false,
+      "kind": "ClusterResourceQuota",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}
