@@ -2,6 +2,11 @@
 
 Outputs of GET on simple paths like `/api` and `/apis/batch/v1`, collected on various versions of kubernetes.
 
+(openshift 3.x versions are derived from corresponding kubernetes 1.x)
+
+TODO: add vanilla kubernetes, [rancher](rancher.com), other distros...
+*PRs welcome!*
+
 # Why?
 
 To help answer questions like "can I assume `verbs` was always there? When was it added?"
@@ -9,9 +14,7 @@ To help answer questions like "can I assume `verbs` was always there? When was i
 # How?
 
 See [tools/](tools/) directory.
-I started from openshift, not kubernetes, because it can be run as a convenient [all-in-one container](https://docs.openshift.org/3.7/getting_started/administrators.html#running-in-a-docker-container).
-TODO: add kubernetes, [rancher](rancher.com), etc...
-*PRs welcome!*
+I started from openshift, not kubernetes, simply because it can be run as a convenient [all-in-one container](https://docs.openshift.org/3.7/getting_started/administrators.html#running-in-a-docker-container).
 
 # License
 
