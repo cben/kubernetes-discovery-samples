@@ -26,24 +26,25 @@ cd "$DIR"
 URL=https://localhost:8443
 
 scrape () {
-  echo -n "Scraping  $DIR/$1/index.json  <--  $URL/$1  ...  "
+  # Usage: scrape http_path [curl_options...]
+  PTH="$1"
+  shift
+
+  echo -n "Scraping  $DIR/$PTH/index.json  <--  $URL/$PTH  ...  "
   # "./" prefix allows scrape "" to work.
-  mkdir -p "./$1"
+  mkdir -p "./$PTH"
 
   set +e
-  # --fail prevents creating index.json on errors like 403 Forbidden.
-  # This is inconvenient, but more correct (?) than creating the file which
-  # would then be served 200 OK from GitHub Pages
-  curl --insecure --location "$URL/$1" --fail --verbose -o "./$1/index.json" 2> "./$1/curl-verbose.txt"
+  curl --insecure --location "$URL/$PTH" -o "./$PTH/index.json" --verbose "$@" 2> "./$PTH/curl-verbose.txt"
   status=$?
   set -e
 
-  echo "$(grep '< HTTP' "./$1/curl-verbose.txt" || tail -n1 "./$1/curl-verbose.txt")"
+  echo "$(grep '< HTTP' "./$PTH/curl-verbose.txt" || tail -n1 "./$PTH/curl-verbose.txt")"
   return $status
 }
 
 echo "Waiting for server..."
-while ! scrape ""; do
+until scrape "" --fail; do
   sleep 1
 done
 
@@ -52,7 +53,7 @@ scrape version/openshift
 
 echo "Iterating .paths from /"
 for PTH in $(jq --raw-output '.paths[] | ltrimstr("/")' index.json); do
-  scrape "$PTH" || echo SKIPPED
+  scrape "$PTH"
 done
 
 echo "Iterating .versions from api/ and oapi/"
