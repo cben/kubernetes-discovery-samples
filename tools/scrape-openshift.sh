@@ -19,37 +19,47 @@ else
        "docker.io/openshift/origin:$VERSION" start
 fi
 
+rm -rf "$DIR"
 mkdir -p "$DIR"
 cd "$DIR"
 
-while ! curl --insecure https://localhost:8443 -o .json; do
+URL=https://localhost:8443
+
+scrape () {
+  echo -n "Scraping  $DIR/$1/index.json  <--  $URL/$1  ...  "
+  # "./" prefix allows scrape "" to work.
+  mkdir -p "./$1"
+  curl --insecure --location "$URL/$1" -o "./$1/index.json" --verbose 2> "./$1/curl-verbose.txt"
+  echo "$(grep '< HTTP' "./$1/curl-verbose.txt")"
+}
+
+while ! scrape ""; do
   sleep 1
 done
 
-for PTH in $(jq --raw-output '.paths[] | ltrimstr("/")' .json) version version/openshift; do
-  mkdir -p "$PTH"
-  curl --insecure "https://localhost:8443/$PTH" -o "$PTH.json"
+for PTH in version version/openshift $(jq --raw-output '.paths[] | ltrimstr("/")' index.json); do
+  scrape "$PTH"
 done
 
 for GROUP in api oapi; do
-  mkdir -p "$GROUP"
-  for APIVER in $(jq --raw-output '.versions[]' "$GROUP.json"); do
-    curl --insecure "https://localhost:8443/$GROUP/$APIVER" -o "$GROUP"/"$APIVER".json
+  for APIVER in $(jq --raw-output '.versions[]' "$GROUP/index.json"); do
+    scrape "$GROUP/$APIVER"
   done
 done
 
-curl --insecure "https://localhost:8443/apis" -o apis.json
-for GROUP in $(jq --raw-output '.groups[].name' apis.json); do
-  mkdir -p "apis/$GROUP"
-  curl --insecure "https://localhost:8443/apis/$GROUP" -o "apis/$GROUP.json"
-  for APIVER in $(jq --raw-output '.versions[].version' "apis/$GROUP.json"); do
-    curl --insecure "https://localhost:8443/$GROUP/$APIVER" -o "apis/$GROUP"/"$APIVER".json
+scrape "apis"
+for GROUP in $(jq --raw-output '.groups[].name' apis/index.json); do
+  scrape "apis/$GROUP"
+  for APIVER in $(jq --raw-output '.versions[].version' "apis/$GROUP/index.json"); do
+    scrape "apis/$GROUP/$APIVER"
   done
 done
 
-find -type f
+echo
+find -name index.json
 
-docker stop "$NAME"
+#docker stop "$NAME"
 
+echo
 echo "# When done run:"
 echo "docker rm -f '$NAME'"
