@@ -1,0 +1,53 @@
+{
+  "groupVersion": "extensions/v1beta1",
+  "resources": [
+    {
+      "name": "daemonsets",
+      "namespaced": true
+    },
+    {
+      "name": "daemonsets/status",
+      "namespaced": true
+    },
+    {
+      "name": "deployments",
+      "namespaced": true
+    },
+    {
+      "name": "deployments/scale",
+      "namespaced": true
+    },
+    {
+      "name": "horizontalpodautoscalers",
+      "namespaced": true
+    },
+    {
+      "name": "horizontalpodautoscalers/status",
+      "namespaced": true
+    },
+    {
+      "name": "ingress",
+      "namespaced": true
+    },
+    {
+      "name": "jobs",
+      "namespaced": true
+    },
+    {
+      "name": "jobs/status",
+      "namespaced": true
+    },
+    {
+      "name": "replicationcontrollers",
+      "namespaced": true
+    },
+    {
+      "name": "replicationcontrollers/scale",
+      "namespaced": true
+    },
+    {
+      "name": "thirdpartyresources",
+      "namespaced": true
+    }
+  ]
+}

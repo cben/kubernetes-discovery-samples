@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "extensions",
+      "versions": [
+        {
+          "groupVersion": "extensions/v1beta1",
+          "version": "v1beta1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "v1beta1",
+        "version": "v1beta1"
+      }
+    }
+  ]
+}
