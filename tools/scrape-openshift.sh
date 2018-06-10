@@ -55,9 +55,6 @@ for GROUP in $(jq --raw-output '.groups[].name' apis/index.json); do
   done
 done
 
-echo
-find -name index.json
-
 #docker stop "$NAME"
 
 echo
