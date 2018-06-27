@@ -47,9 +47,9 @@
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
 } [5 bytes data]
-* Using Stream ID: 1 (easy handle 0x561ebf3502d0)
+* Using Stream ID: 1 (easy handle 0x560aa2e7f2d0)
 } [5 bytes data]
-> GET /healthz/poststarthook/quota.openshift.io-clusterquotamapping HTTP/2
+> GET /swagger.json HTTP/2
 > Host: localhost:8443
 > User-Agent: curl/7.55.1
 > Accept: */*
@@ -58,11 +58,14 @@
 * Connection state changed (MAX_CONCURRENT_STREAMS updated)!
 } [5 bytes data]
 < HTTP/2 200 
-< cache-control: no-store
-< content-type: text/plain; charset=utf-8
-< content-length: 2
-< date: Wed, 27 Jun 2018 11:58:45 GMT
+< accept-ranges: bytes
+< content-type: application/json
+< etag: "178D3549E8AE00BF390D690F711C49B6053D39D584BFBA6E3FCBABAC4FF407606C04C85187D42A53EA2483E11EC7F5F8F583ACACE158F607F9A49DF06D64CB83"
+< last-modified: Wed, 27 Jun 2018 11:58:38 GMT
+< vary: Accept-Encoding
+< content-length: 5365916
+< date: Wed, 27 Jun 2018 11:58:46 GMT
 < 
 { [5 bytes data]
-100     2  100     2    0     0      2      0  0:00:01 --:--:--  0:00:01   117
+100 5240k  100 5240k    0     0  5240k      0  0:00:01 --:--:--  0:00:01  150M
 * Connection #0 to host localhost left intact
