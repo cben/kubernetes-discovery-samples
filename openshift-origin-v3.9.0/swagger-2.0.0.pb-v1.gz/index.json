@@ -1,0 +1,10 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "forbidden: User \"system:anonymous\" cannot get path \"/swagger-2.0.0.pb-v1.gz\": User \"system:anonymous\" cannot \"get\" on \"/swagger-2.0.0.pb-v1.gz\"",
+  "reason": "Forbidden",
+  "details": {},
+  "code": 403
+}
