@@ -9,7 +9,7 @@ TODO: add vanilla kubernetes, [rancher](rancher.com), other distros...
 
 ## Direct GitHub Pages access
 
-You can even try plugging a URL like https://cben.github.io/kubernetes-discovery-samples/openshift-origin-v3.10.0/api
+You can even try plugging a URL like <https://cben.github.io/kubernetes-discovery-samples/openshift-origin-v3.10.0/api>
 as the endpoint into kuberentes client libraries!  There are some deviations:
 
 - [ ] Paths like `api/v1` are implemented as directories so they all redirect to `api/v1/`.
@@ -17,7 +17,7 @@ as the endpoint into kuberentes client libraries!  There are some deviations:
 
 and of course it's not a real API, you can run any actions...
 
-If you're viewing this from GitHub Pages, it won't show you the list of  subdirectories, see https://github.com/cben/kubernetes-discovery-samples/
+If you're viewing this from GitHub Pages, it won't show you the list of  subdirectories, see <https://github.com/cben/kubernetes-discovery-samples/>
 
 # Why?
 
