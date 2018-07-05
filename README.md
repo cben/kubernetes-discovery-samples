@@ -17,6 +17,8 @@ as the endpoint into kuberentes client libraries!  There are some deviations:
 
 and of course it's not a real API, you can run any actions...
 
+If you're viewing this from GitHub Pages, it won't show you the list of  subdirectories, see https://github.com/cben/kubernetes-discovery-samples/
+
 # Why?
 
 To help answer questions like "can I assume `verbs` was always there? When was it added?"
