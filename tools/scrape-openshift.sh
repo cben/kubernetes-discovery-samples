@@ -22,12 +22,14 @@ else
        --privileged --pid=host --net=host \
        -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys -v /var/lib/docker:/var/lib/docker:rw \
        -v /var/lib/origin/openshift.local.volumes:/var/lib/origin/openshift.local.volumes \
+       -- \
        "docker.io/openshift/origin:$VERSION" start
 fi
 
 env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 tools/scrape.sh
 
 echo
-docker ps --all --filter=name="$NAME"
-echo "# When done run:"
-echo "docker rm -f '$NAME'"
+#docker ps --all --filter=name="$NAME"
+#echo "# When done run:"
+#echo "docker rm -f '$NAME'"
+docker-verbose rm -f "$NAME"
