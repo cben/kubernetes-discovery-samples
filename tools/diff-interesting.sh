@@ -9,8 +9,10 @@ diff --recursive --unified=1 --color \
      --ignore-matching-lines='^\*  start date:' \
      --ignore-matching-lines='^\*  expire date:' \
      --ignore-matching-lines='^\*  issuer:' \
-     --ignore-matching-lines='^< Date:' \
-     --ignore-matching-lines='^< Content-Length:' \
+     --ignore-matching-lines='^\* Using Stream ID:' \
+     --ignore-matching-lines='^< [Dd]ate:' \
+     --ignore-matching-lines='^< [Ll]ast-[Mm]odified' \
+     --ignore-matching-lines='^< [Cc]ontent-[Ll]ength:' \
      --ignore-matching-lines='--:--:--' \
      --ignore-matching-lines='{ \[[0-9]* bytes data\]' \
      "$@"
