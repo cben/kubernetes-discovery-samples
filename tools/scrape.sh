@@ -17,7 +17,7 @@ scrape () {
   mkdir -p "./$PTH"
 
   set +e
-  curl --insecure --location "$URL/$PTH" -o "./$PTH/index.json" --verbose "$@" 2> "./$PTH/curl-verbose.txt"
+  curl --insecure --location "$URL/$PTH" -o "./$PTH/index.json" --verbose --silent --show-error "$@" 2> "./$PTH/curl-verbose.txt"
   status=$?
   set -e
 
