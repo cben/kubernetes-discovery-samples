@@ -1,11 +1,13 @@
 #!/bin/bash
-# Usage: env URL=... DIR=... scrape.sh
+# Usage: env URL=... DIR=... scrape.sh [curl_options...]
 
 set -e -u -o pipefail
 
 rm -rf "$DIR"
 mkdir -p --verbose "$DIR"
 cd "$DIR"
+
+CURL_OPTIONS=("$@")
 
 scrape () {
   # Usage: scrape http_path [curl_options...]
@@ -17,7 +19,7 @@ scrape () {
   mkdir -p "./$PTH"
 
   set +e
-  LC_ALL=en_US.utf8 curl --insecure --location "$URL/$PTH" --output "./$PTH/index.json" --dump-header "./$PTH/headers.txt" --verbose --silent --show-error "$@" 2> "./$PTH/curl-verbose.txt"
+  LC_ALL=en_US.utf8 curl --insecure --location "$URL/$PTH" --output "./$PTH/index.json" --dump-header "./$PTH/headers.txt" --verbose --silent --show-error "${CURL_OPTIONS[@]}" "$@" 2> "./$PTH/curl-verbose.txt"
   status=$?
   set -e
 
@@ -26,7 +28,7 @@ scrape () {
 }
 
 echo "Waiting for server..."
-until scrape healthz/ready --fail && grep ok ./healthz/ready/index.json; do
+until scrape healthz --fail && grep ok ./healthz/index.json; do
   sleep 1
 done
 
