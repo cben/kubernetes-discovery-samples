@@ -27,34 +27,45 @@ scrape () {
   return $status
 }
 
+result () {
+  # Usage: result http_path
+  PTH="$1"
+  cat ./$PTH/index.json
+  echo  # the json typically has no trailing newline after last '}'
+}
+
 echo "Waiting for server..."
-until scrape "$WAIT_OK" --fail && grep ok ./$WAIT_OK/index.json; do
+until scrape "$WAIT_OK" --fail && result $WAIT_OK | grep ok; do
   sleep 1
 done
 
 scrape ""
+
+# Scraping separately because old versions don't advertize /version (and /version/openshift) under "paths".
 echo "====== Recorded version ====="
-scrape version
-scrape version/openshift
+scrape "version"
+result "version"
+scrape "version/openshift"
+result "version/openshift"
 
 echo "Iterating .paths from /"
-for PTH in $(jq --raw-output '.paths[] | ltrimstr("/")' index.json); do
+for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")'); do
   scrape "$PTH"
 done
 
 # TODO oapi/ is specific to openshift.
 echo "Iterating .versions from api/ and oapi/"
 for GROUP in api oapi; do
-  for APIVER in $(jq --raw-output '.versions[]' "$GROUP/index.json"); do
+  for APIVER in $(result "$GROUP" | jq --raw-output '.versions[]'); do
     scrape "$GROUP/$APIVER"
   done
 done
 
 echo "Iterating .groups from apis/"
 scrape "apis"
-for GROUP in $(jq --raw-output '.groups[].name' apis/index.json); do
+for GROUP in $(result "apis" | jq --raw-output '.groups[].name'); do
   scrape "apis/$GROUP"
-  for APIVER in $(jq --raw-output '.versions[].version' "apis/$GROUP/index.json"); do
+  for APIVER in $(result "apis/$GROUP" | jq --raw-output '.versions[].version'); do
     scrape "apis/$GROUP/$APIVER"
   done
 done
