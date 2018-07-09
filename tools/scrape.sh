@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: env URL=... DIR=... scrape.sh [curl_options...]
+# Usage: env URL=... DIR=... WAIT_OK=healthz scrape.sh [curl_options...]
 
 set -e -u -o pipefail
 
@@ -28,11 +28,12 @@ scrape () {
 }
 
 echo "Waiting for server..."
-until scrape healthz --fail && grep ok ./healthz/index.json; do
+until scrape "$WAIT_OK" --fail && grep ok ./$WAIT_OK/index.json; do
   sleep 1
 done
 
 scrape ""
+echo "====== Recorded version ====="
 scrape version
 scrape version/openshift
 

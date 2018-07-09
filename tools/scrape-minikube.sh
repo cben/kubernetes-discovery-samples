@@ -21,7 +21,7 @@ IP="$("$MINIKUBE" ip)"
 
 # We don't know kubernetes version yet
 export DIR="minikube-$VERSION"
-env URL="https://$IP:8443" tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
+env URL="https://$IP:8443" WAIT_OK=healthz tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
 
 ln -s $DIR kubernetes-"$(jq --raw-output .gitVersion "$DIR"/version/index.json)"
 

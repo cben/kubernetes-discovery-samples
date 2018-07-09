@@ -26,7 +26,7 @@ else
        "docker.io/openshift/origin:$VERSION" start
 fi
 
-env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 tools/scrape.sh
+env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 WAIT_OK=healthz/ready tools/scrape.sh
 
 echo
 #docker ps --all --filter=name="$NAME"
