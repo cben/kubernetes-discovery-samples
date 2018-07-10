@@ -1,6 +1,6 @@
 
 2.0ñ
-OpenShift API (with Kubernetes)v3.9.0+a96a520-22÷OpenShift provides builds, application lifecycle, image content management,
+OpenShift API (with Kubernetes)v3.9.0+71543b2-33÷OpenShift provides builds, application lifecycle, image content management,
 and administrative policy on top of Kubernetes. The API allows consistent
 management of those objects.
 
@@ -57050,13 +57050,13 @@ C
 
 Oauth2AccessToken b
 
-Oauth2Implicit jø
+Oauth2Implicit jû
 
 M
 BearerToken><
 apiKeyauthorizationheader"Bearer Token authentication
-§
-Oauth2AccessToken‘2Ž
+©
+Oauth2AccessToken“2
 oauth2
 accessCode§
 c
@@ -57068,9 +57068,9 @@ m
 v
 user:list-projects`Read-only access to list your projects and view their metadata (display name, description, etc.)
 –
-user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"(https://10.35.2.130:8443/oauth/authorize*$https://10.35.2.130:8443/oauth/token
-ü
-Oauth2Implicitéæ
+user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)")https://10.55.104.39:8443/oauth/authorize*%https://10.55.104.39:8443/oauth/token
+ý
+Oauth2Implicitêç
 oauth2implicit§
 c
 user:check-accessNRead-only access to view your privileges (for example, "can I create builds?")
@@ -57081,4 +57081,4 @@ m
 v
 user:list-projects`Read-only access to list your projects and view their metadata (display name, description, etc.)
 –
-user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"(https://10.35.2.130:8443/oauth/authorize
+user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)")https://10.55.104.39:8443/oauth/authorize
