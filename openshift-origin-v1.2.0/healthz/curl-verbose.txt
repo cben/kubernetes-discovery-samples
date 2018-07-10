@@ -1,8 +1,6 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying ::1...
+*   Trying ::1...
 * TCP_NODELAY set
-* connect to ::1 port 8443 failed: Conexión rehusada
+* connect to ::1 port 8443 failed: Connection refused
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 8443 (#0)
@@ -18,11 +16,11 @@
 * TLSv1.2 (IN), TLS handshake, Server hello (2):
 { [64 bytes data]
 * TLSv1.2 (IN), TLS handshake, Certificate (11):
-{ [1832 bytes data]
+{ [1820 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server key exchange (12):
 { [333 bytes data]
 * TLSv1.2 (IN), TLS handshake, Request CERT (13):
-{ [57 bytes data]
+{ [65 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server finished (14):
 { [4 bytes data]
 * TLSv1.2 (OUT), TLS handshake, Certificate (11):
@@ -39,9 +37,9 @@
 * ALPN, server accepted to use http/1.1
 * Server certificate:
 *  subject: CN=10.0.0.13
-*  start date: Jun 10 20:34:17 2018 GMT
-*  expire date: Jun  9 20:34:18 2020 GMT
-*  issuer: CN=openshift-signer@1527806524
+*  start date: Jul  8 17:20:19 2018 GMT
+*  expire date: Jul  7 17:20:20 2020 GMT
+*  issuer: CN=openshift-signer@1531070420
 *  SSL certificate verify result: self signed certificate in certificate chain (19), continuing anyway.
 } [5 bytes data]
 > GET /healthz HTTP/1.1
@@ -52,10 +50,9 @@
 { [5 bytes data]
 < HTTP/1.1 200 OK
 < Cache-Control: no-store
-< Date: Sun, 10 Jun 2018 20:41:46 GMT
+< Date: Sun, 08 Jul 2018 17:20:26 GMT
 < Content-Length: 2
 < Content-Type: text/plain; charset=utf-8
 < 
 { [2 bytes data]
-100     2  100     2    0     0      2      0  0:00:01 --:--:--  0:00:01    42
 * Connection #0 to host localhost left intact

@@ -42,7 +42,7 @@
 *  issuer: CN=openshift-signer@1531070420
 *  SSL certificate verify result: self signed certificate in certificate chain (19), continuing anyway.
 } [5 bytes data]
-> GET /healthz/ping HTTP/1.1
+> GET /apis/batch/v1 HTTP/1.1
 > Host: localhost:8443
 > User-Agent: curl/7.55.1
 > Accept: */*
@@ -50,9 +50,9 @@
 { [5 bytes data]
 < HTTP/1.1 200 OK
 < Cache-Control: no-store
-< Date: Sun, 08 Jul 2018 17:20:26 GMT
-< Content-Length: 2
-< Content-Type: text/plain; charset=utf-8
+< Content-Type: application/json
+< Date: Sun, 08 Jul 2018 17:20:27 GMT
+< Content-Length: 273
 < 
-{ [2 bytes data]
+{ [273 bytes data]
 * Connection #0 to host localhost left intact
