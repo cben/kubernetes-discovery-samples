@@ -1,0 +1,20 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "authorization.k8s.io",
+  "versions": [
+    {
+      "groupVersion": "authorization.k8s.io/v1",
+      "version": "v1"
+    },
+    {
+      "groupVersion": "authorization.k8s.io/v1beta1",
+      "version": "v1beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "authorization.k8s.io/v1",
+    "version": "v1"
+  },
+  "serverAddressByClientCIDRs": null
+}
