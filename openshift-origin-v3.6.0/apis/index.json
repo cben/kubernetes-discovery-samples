@@ -20,7 +20,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -62,7 +62,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -85,7 +85,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -104,7 +104,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -123,7 +123,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -142,7 +142,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -161,7 +161,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -184,7 +184,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -203,26 +203,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "security.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "security.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "security.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -241,102 +222,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "user.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "user.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "user.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "apps.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "apps.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "apps.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "authorization.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "authorization.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "authorization.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "oauth.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "oauth.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "oauth.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
-        }
-      ]
-    },
-    {
-      "name": "project.openshift.io",
-      "versions": [
-        {
-          "groupVersion": "project.openshift.io/v1",
-          "version": "v1"
-        }
-      ],
-      "preferredVersion": {
-        "groupVersion": "project.openshift.io/v1",
-        "version": "v1"
-      },
-      "serverAddressByClientCIDRs": [
-        {
-          "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -355,7 +241,102 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "user.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "user.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "user.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "authorization.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "authorization.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "authorization.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "oauth.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "oauth.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "oauth.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "security.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "security.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "security.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "project.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "project.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "project.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -374,7 +355,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -393,7 +374,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -412,7 +393,26 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
+        }
+      ]
+    },
+    {
+      "name": "apps.openshift.io",
+      "versions": [
+        {
+          "groupVersion": "apps.openshift.io/v1",
+          "version": "v1"
+        }
+      ],
+      "preferredVersion": {
+        "groupVersion": "apps.openshift.io/v1",
+        "version": "v1"
+      },
+      "serverAddressByClientCIDRs": [
+        {
+          "clientCIDR": "0.0.0.0/0",
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -431,7 +431,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     }

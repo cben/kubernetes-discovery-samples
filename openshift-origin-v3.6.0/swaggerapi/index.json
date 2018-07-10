@@ -114,14 +114,6 @@
     "description": "get information of a group"
    },
    {
-    "path": "/apis/security.openshift.io/v1",
-    "description": "API at /apis/security.openshift.io/v1"
-   },
-   {
-    "path": "/apis/security.openshift.io",
-    "description": "get information of a group"
-   },
-   {
     "path": "/apis/build.openshift.io/v1",
     "description": "API at /apis/build.openshift.io/v1"
    },
@@ -130,19 +122,19 @@
     "description": "get information of a group"
    },
    {
+    "path": "/apis/quota.openshift.io/v1",
+    "description": "API at /apis/quota.openshift.io/v1"
+   },
+   {
+    "path": "/apis/quota.openshift.io",
+    "description": "get information of a group"
+   },
+   {
     "path": "/apis/user.openshift.io/v1",
     "description": "API at /apis/user.openshift.io/v1"
    },
    {
     "path": "/apis/user.openshift.io",
-    "description": "get information of a group"
-   },
-   {
-    "path": "/apis/apps.openshift.io/v1",
-    "description": "API at /apis/apps.openshift.io/v1"
-   },
-   {
-    "path": "/apis/apps.openshift.io",
     "description": "get information of a group"
    },
    {
@@ -162,19 +154,19 @@
     "description": "get information of a group"
    },
    {
+    "path": "/apis/security.openshift.io/v1",
+    "description": "API at /apis/security.openshift.io/v1"
+   },
+   {
+    "path": "/apis/security.openshift.io",
+    "description": "get information of a group"
+   },
+   {
     "path": "/apis/project.openshift.io/v1",
     "description": "API at /apis/project.openshift.io/v1"
    },
    {
     "path": "/apis/project.openshift.io",
-    "description": "get information of a group"
-   },
-   {
-    "path": "/apis/quota.openshift.io/v1",
-    "description": "API at /apis/quota.openshift.io/v1"
-   },
-   {
-    "path": "/apis/quota.openshift.io",
     "description": "get information of a group"
    },
    {
@@ -199,6 +191,14 @@
    },
    {
     "path": "/apis/image.openshift.io",
+    "description": "get information of a group"
+   },
+   {
+    "path": "/apis/apps.openshift.io/v1",
+    "description": "API at /apis/apps.openshift.io/v1"
+   },
+   {
+    "path": "/apis/apps.openshift.io",
     "description": "get information of a group"
    },
    {
