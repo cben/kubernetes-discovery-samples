@@ -1,5 +1,6 @@
 #!/bin/bash
 # Usage: scrape-openshift.sh 3.10.0
+# Available versions: https://hub.docker.com/r/openshift/origin/tags/
 
 set -e -u -o pipefail
 
@@ -26,7 +27,7 @@ else
        "docker.io/openshift/origin:$VERSION" start
 fi
 
-env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 WAIT_OK=healthz/ready tools/scrape.sh
+env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 WAIT_OKS="healthz healthz/ready" tools/scrape.sh
 
 echo
 #docker ps --all --filter=name="$NAME"

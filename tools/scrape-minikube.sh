@@ -1,6 +1,7 @@
 #!/bin/bash
 # Usage: scrape-minikube.sh 0.28.0
-#   Takes version *of minikube*, symlinks resulting kubernetes version afterwards
+# Takes version *of minikube*.  List: https://github.com/kubernetes/minikube/tags
+# Symlinks resulting kubernetes version afterwards.
 
 set -e -u -o pipefail
 
@@ -21,7 +22,7 @@ IP="$("$MINIKUBE" ip)"
 
 # We don't know kubernetes version yet
 export DIR="minikube-$VERSION"
-env URL="https://$IP:8443" WAIT_OK=healthz tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
+env URL="https://$IP:8443" WAIT_OKS="healthz" tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
 
 ln -s $DIR kubernetes-"$(jq --raw-output .gitVersion "$DIR"/version/index.json)"
 

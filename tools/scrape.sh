@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: env URL=... DIR=... WAIT_OK=healthz scrape.sh [curl_options...]
+# Usage: env URL=... DIR=... WAIT_OKS='healthz healtz/ready' scrape.sh [curl_options...]
 
 set -e -u -o pipefail
 
@@ -35,10 +35,13 @@ result () {
 }
 
 echo "Waiting for server..."
-until scrape "$WAIT_OK" --fail && result $WAIT_OK | grep ok; do
-  sleep 1
+for WAIT_OK in $WAIT_OKS; do
+  until scrape "$WAIT_OK" --fail && result "$WAIT_OK" | grep ok; do
+    sleep 1
+  done
 done
 
+# Obtain "paths" array.
 scrape ""
 
 # Scraping separately because old versions don't advertize /version (and /version/openshift) under "paths".
