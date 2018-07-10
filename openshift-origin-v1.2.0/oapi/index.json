@@ -1,5 +1,8 @@
 {
+  "kind": "APIVersions",
+  "apiVersion": "v1",
   "versions": [
     "v1"
-  ]
+  ],
+  "serverAddressByClientCIDRs": null
 }

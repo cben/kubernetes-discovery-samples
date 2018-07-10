@@ -1,129 +1,186 @@
 {
+  "kind": "APIResourceList",
   "groupVersion": "v1",
   "resources": [
     {
       "name": "bindings",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Binding"
     },
     {
       "name": "componentstatuses",
-      "namespaced": true
+      "namespaced": false,
+      "kind": "ComponentStatus"
+    },
+    {
+      "name": "configmaps",
+      "namespaced": true,
+      "kind": "ConfigMap"
     },
     {
       "name": "endpoints",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Endpoints"
     },
     {
       "name": "events",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Event"
     },
     {
       "name": "limitranges",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "LimitRange"
     },
     {
       "name": "namespaces",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "Namespace"
     },
     {
       "name": "namespaces/finalize",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "Namespace"
     },
     {
       "name": "namespaces/status",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "Namespace"
     },
     {
       "name": "nodes",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "Node"
+    },
+    {
+      "name": "nodes/proxy",
+      "namespaced": false,
+      "kind": "Node"
     },
     {
       "name": "nodes/status",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "Node"
     },
     {
       "name": "persistentvolumeclaims",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "PersistentVolumeClaim"
     },
     {
       "name": "persistentvolumeclaims/status",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "PersistentVolumeClaim"
     },
     {
       "name": "persistentvolumes",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "PersistentVolume"
     },
     {
       "name": "persistentvolumes/status",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "PersistentVolume"
     },
     {
       "name": "pods",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/attach",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/binding",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Binding"
     },
     {
       "name": "pods/exec",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/log",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/portforward",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/proxy",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "pods/status",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Pod"
     },
     {
       "name": "podtemplates",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "PodTemplate"
     },
     {
       "name": "replicationcontrollers",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "ReplicationController"
+    },
+    {
+      "name": "replicationcontrollers/scale",
+      "namespaced": true,
+      "kind": "Scale"
     },
     {
       "name": "replicationcontrollers/status",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "ReplicationController"
     },
     {
       "name": "resourcequotas",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "ResourceQuota"
     },
     {
       "name": "resourcequotas/status",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "ResourceQuota"
     },
     {
       "name": "secrets",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Secret"
     },
     {
       "name": "securitycontextconstraints",
-      "namespaced": false
+      "namespaced": false,
+      "kind": "SecurityContextConstraints"
     },
     {
       "name": "serviceaccounts",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "ServiceAccount"
     },
     {
       "name": "services",
-      "namespaced": true
+      "namespaced": true,
+      "kind": "Service"
+    },
+    {
+      "name": "services/proxy",
+      "namespaced": true,
+      "kind": "Service"
+    },
+    {
+      "name": "services/status",
+      "namespaced": true,
+      "kind": "Service"
     }
   ]
 }
