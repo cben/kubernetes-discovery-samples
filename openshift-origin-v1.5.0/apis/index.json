@@ -5,18 +5,18 @@
       "name": "apps",
       "versions": [
         {
-          "groupVersion": "apps/v1alpha1",
-          "version": "v1alpha1"
+          "groupVersion": "apps/v1beta1",
+          "version": "v1beta1"
         }
       ],
       "preferredVersion": {
-        "groupVersion": "apps/v1alpha1",
-        "version": "v1alpha1"
+        "groupVersion": "apps/v1beta1",
+        "version": "v1beta1"
       },
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -35,7 +35,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -54,7 +54,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -77,7 +77,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -96,7 +96,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -115,7 +115,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -123,18 +123,18 @@
       "name": "policy",
       "versions": [
         {
-          "groupVersion": "policy/v1alpha1",
-          "version": "v1alpha1"
+          "groupVersion": "policy/v1beta1",
+          "version": "v1beta1"
         }
       ],
       "preferredVersion": {
-        "groupVersion": "policy/v1alpha1",
-        "version": "v1alpha1"
+        "groupVersion": "policy/v1beta1",
+        "version": "v1beta1"
       },
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     },
@@ -153,7 +153,7 @@
       "serverAddressByClientCIDRs": [
         {
           "clientCIDR": "0.0.0.0/0",
-          "serverAddress": "10.0.0.13:8443"
+          "serverAddress": "10.1.0.231:8443"
         }
       ]
     }

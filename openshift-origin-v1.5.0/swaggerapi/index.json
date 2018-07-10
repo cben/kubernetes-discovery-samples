@@ -18,8 +18,8 @@
     "description": "get available API versions"
    },
    {
-    "path": "/apis/apps/v1alpha1",
-    "description": "API at /apis/apps/v1alpha1"
+    "path": "/apis/apps/v1beta1",
+    "description": "API at /apis/apps/v1beta1"
    },
    {
     "path": "/apis/apps",
@@ -70,8 +70,8 @@
     "description": "get information of a group"
    },
    {
-    "path": "/apis/policy/v1alpha1",
-    "description": "API at /apis/policy/v1alpha1"
+    "path": "/apis/policy/v1beta1",
+    "description": "API at /apis/policy/v1beta1"
    },
    {
     "path": "/apis/policy",
@@ -91,31 +91,23 @@
    },
    {
     "path": "/osapi",
-    "description": ""
+    "description": "list supported server API versions"
    },
    {
     "path": "/oapi",
-    "description": ""
+    "description": "list supported server API versions"
    },
    {
     "path": "/controllers",
-    "description": ""
-   },
-   {
-    "path": "/healthz",
-    "description": ""
+    "description": "Check whether the controllers are running on this master"
    },
    {
     "path": "/healthz/ready",
-    "description": ""
+    "description": "return the readiness state of the master"
    },
    {
     "path": "/version/openshift",
     "description": "git code version from which this is built"
-   },
-   {
-    "path": "/.well-known/oauth-authorization-server",
-    "description": "OAuth 2.0 Authorization Server Metadata"
    }
   ],
   "apiVersion": "",

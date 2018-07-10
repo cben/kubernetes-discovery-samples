@@ -1,0 +1,17 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "apps/v1beta1",
+  "resources": [
+    {
+      "name": "statefulsets",
+      "namespaced": true,
+      "kind": "StatefulSet"
+    },
+    {
+      "name": "statefulsets/status",
+      "namespaced": true,
+      "kind": "StatefulSet"
+    }
+  ]
+}

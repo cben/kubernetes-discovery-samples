@@ -1,0 +1,6 @@
+{
+  "kind": "APIVersions",
+  "apiVersion": "v1",
+  "versions": [],
+  "serverAddressByClientCIDRs": null
+}

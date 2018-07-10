@@ -4,13 +4,13 @@
   "name": "policy",
   "versions": [
     {
-      "groupVersion": "policy/v1alpha1",
-      "version": "v1alpha1"
+      "groupVersion": "policy/v1beta1",
+      "version": "v1beta1"
     }
   ],
   "preferredVersion": {
-    "groupVersion": "policy/v1alpha1",
-    "version": "v1alpha1"
+    "groupVersion": "policy/v1beta1",
+    "version": "v1beta1"
   },
   "serverAddressByClientCIDRs": null
 }

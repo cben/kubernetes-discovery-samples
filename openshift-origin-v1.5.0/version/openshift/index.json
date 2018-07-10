@@ -1,7 +1,7 @@
 {
   "major": "1",
-  "minor": "4+",
-  "gitCommit": "146006b6fd64c1b8a1a6522091f3665f1ebde726",
-  "gitVersion": "v1.4.0+208f053",
-  "buildDate": "2017-01-18T19:06:29Z"
+  "minor": "5+",
+  "gitCommit": "a4aae4a5b40badae9fbf80f4f53e625d97dda7d7",
+  "gitVersion": "v1.5.0+031cbe4",
+  "buildDate": "2017-04-21T15:37:23Z"
 }

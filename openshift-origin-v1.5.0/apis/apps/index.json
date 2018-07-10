@@ -4,13 +4,13 @@
   "name": "apps",
   "versions": [
     {
-      "groupVersion": "apps/v1alpha1",
-      "version": "v1alpha1"
+      "groupVersion": "apps/v1beta1",
+      "version": "v1beta1"
     }
   ],
   "preferredVersion": {
-    "groupVersion": "apps/v1alpha1",
-    "version": "v1alpha1"
+    "groupVersion": "apps/v1beta1",
+    "version": "v1beta1"
   },
   "serverAddressByClientCIDRs": null
 }
