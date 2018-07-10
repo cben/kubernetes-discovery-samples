@@ -1,24 +1,19 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying ::1...
+*   Trying ::1...
 * TCP_NODELAY set
-* connect to ::1 port 8443 failed: Conexión rehusada
+* connect to ::1 port 8443 failed: Connection refused
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 8443 (#0)
 * ALPN, offering h2
 * ALPN, offering http/1.1
-* Cipher selection: PROFILE=SYSTEM
-* successfully set certificate verify locations:
-*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
-  CApath: none
+* ignoring certificate verify locations due to disabled peer verification
 } [5 bytes data]
 * TLSv1.2 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
+} [255 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server hello (2):
 { [58 bytes data]
 * TLSv1.2 (IN), TLS handshake, Certificate (11):
-{ [1820 bytes data]
+{ [1825 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server key exchange (12):
 { [300 bytes data]
 * TLSv1.2 (IN), TLS handshake, Request CERT (13):
@@ -38,35 +33,34 @@
 * SSL connection using TLSv1.2 / ECDHE-RSA-CHACHA20-POLY1305
 * ALPN, server accepted to use h2
 * Server certificate:
-*  subject: CN=10.0.0.13
-*  start date: Jun 10 22:29:08 2018 GMT
-*  expire date: Jun  9 22:29:09 2020 GMT
-*  issuer: CN=openshift-signer@1528669749
+*  subject: CN=127.0.0.1
+*  start date: Jul 10 16:20:23 2018 GMT
+*  expire date: Jul  9 16:20:24 2020 GMT
+*  issuer: CN=openshift-signer@1531239623
 *  SSL certificate verify result: self signed certificate in certificate chain (19), continuing anyway.
 * Using HTTP2, server supports multi-use
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
 } [5 bytes data]
-* Using Stream ID: 1 (easy handle 0x56358682f2d0)
+* Using Stream ID: 1 (easy handle 0x55f8190a8370)
 } [5 bytes data]
 > GET /openapi/v2 HTTP/2
 > Host: localhost:8443
-> User-Agent: curl/7.55.1
+> User-Agent: curl/7.59.0
 > Accept: */*
 > 
 { [5 bytes data]
-* Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+* Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
 } [5 bytes data]
 < HTTP/2 200 
 < accept-ranges: bytes
 < content-type: text/plain; charset=utf-8
-< etag: "4D2677C3525D5C38B1EB68F3DD016BC59E2E6B571784A299A0D483E5E9CBFE908809826EB6D1ACACC84755E63A7A3ECDF0EAFB41BE86496B0BD1E0C385979CC9"
-< last-modified: Sun, 10 Jun 2018 22:29:20 GMT
+< etag: "C59BB30ACE911AFC977D59B4970C9A1F77929E77D990061FD719A435EF158DE4AAB3414141AEC96EFF22C2C7B18DDF19DB05A38B45C1BA449607228FE709B58D"
+< last-modified: Tue, 10 Jul 2018 16:20:36 GMT
 < vary: Accept-Encoding
 < vary: Accept
-< content-length: 5557907
-< date: Sun, 10 Jun 2018 22:29:30 GMT
+< content-length: 5557922
+< date: Tue, 10 Jul 2018 16:20:47 GMT
 < 
 { [5 bytes data]
-100 5427k  100 5427k    0     0  5427k      0  0:00:01 --:--:--  0:00:01 76.8M
 * Connection #0 to host localhost left intact

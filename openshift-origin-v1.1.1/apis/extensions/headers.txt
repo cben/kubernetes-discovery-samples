@@ -1,0 +1,13 @@
+HTTP/1.1 301 Moved Permanently
+Cache-Control: no-store
+Location: /apis/extensions/
+Date: Mon, 09 Jul 2018 10:09:13 GMT
+Content-Length: 52
+Content-Type: text/html; charset=utf-8
+
+HTTP/1.1 200 OK
+Cache-Control: no-store
+Content-Type: application/json
+Date: Mon, 09 Jul 2018 10:09:13 GMT
+Content-Length: 215
+

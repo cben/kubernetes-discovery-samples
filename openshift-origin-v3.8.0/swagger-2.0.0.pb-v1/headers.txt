@@ -1,0 +1,10 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: no-store
+content-type: application/octet-stream
+etag: "3545523C5D4E508E347F0DA9B7C2725540D01656B9A61058A30361E99FFECF201FE1E86BF89BC62945865ACD53B286C0CFA7F96981977A2C2DEE4FEAA6EB23D5"
+last-modified: Mon, 09 Jul 2018 13:43:20 GMT
+vary: Accept-Encoding
+content-length: 1816938
+date: Mon, 09 Jul 2018 13:43:28 GMT
+

@@ -1,24 +1,19 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying ::1...
+*   Trying ::1...
 * TCP_NODELAY set
-* connect to ::1 port 8443 failed: Conexión rehusada
+* connect to ::1 port 8443 failed: Connection refused
 *   Trying 127.0.0.1...
 * TCP_NODELAY set
 * Connected to localhost (127.0.0.1) port 8443 (#0)
 * ALPN, offering h2
 * ALPN, offering http/1.1
-* Cipher selection: PROFILE=SYSTEM
-* successfully set certificate verify locations:
-*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
-  CApath: none
+* ignoring certificate verify locations due to disabled peer verification
 } [5 bytes data]
 * TLSv1.2 (OUT), TLS handshake, Client hello (1):
-} [512 bytes data]
+} [255 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server hello (2):
 { [58 bytes data]
 * TLSv1.2 (IN), TLS handshake, Certificate (11):
-{ [1820 bytes data]
+{ [1842 bytes data]
 * TLSv1.2 (IN), TLS handshake, Server key exchange (12):
 { [300 bytes data]
 * TLSv1.2 (IN), TLS handshake, Request CERT (13):
@@ -38,34 +33,33 @@
 * SSL connection using TLSv1.2 / ECDHE-RSA-CHACHA20-POLY1305
 * ALPN, server accepted to use h2
 * Server certificate:
-*  subject: CN=10.0.0.13
-*  start date: Jun 10 21:11:52 2018 GMT
-*  expire date: Jun  9 21:11:53 2020 GMT
-*  issuer: CN=openshift-signer@1528665111
+*  subject: CN=10.1.0.231
+*  start date: Jul  9 13:39:59 2018 GMT
+*  expire date: Jul  8 13:40:00 2020 GMT
+*  issuer: CN=openshift-signer@1531143598
 *  SSL certificate verify result: self signed certificate in certificate chain (19), continuing anyway.
 * Using HTTP2, server supports multi-use
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
 } [5 bytes data]
-* Using Stream ID: 1 (easy handle 0x5614ee2692d0)
+* Using Stream ID: 1 (easy handle 0x5614fb4e3370)
 } [5 bytes data]
 > GET /swagger.json HTTP/2
 > Host: localhost:8443
-> User-Agent: curl/7.55.1
+> User-Agent: curl/7.59.0
 > Accept: */*
 > 
 { [5 bytes data]
-* Connection state changed (MAX_CONCURRENT_STREAMS updated)!
+* Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
 } [5 bytes data]
 < HTTP/2 200 
 < accept-ranges: bytes
 < cache-control: no-store
 < content-type: application/json
-< etag: "F9C3288CDB57FD4D471B7111A4AA7C6AC964613D22DA4293242728FE86BE0F2632C6000B2F1B84AD82F0BFFD942D33381F2634D04CA04345FBE8DD20985D9B7A"
-< last-modified: Sun, 10 Jun 2018 21:11:59 GMT
-< content-length: 3221469
-< date: Sun, 10 Jun 2018 21:17:18 GMT
+< etag: "8B6A0C5F6BEFCF270939686A3E1F6310B69E75401FA9D51C508F51D67969864D7BA3CF85129AE1E0679521977C016BA44371F1E1CB001270D5A2B16EA468E78B"
+< last-modified: Mon, 09 Jul 2018 13:40:12 GMT
+< content-length: 3221472
+< date: Mon, 09 Jul 2018 13:40:20 GMT
 < 
 { [5 bytes data]
-100 3145k  100 3145k    0     0  3145k      0  0:00:01 --:--:--  0:00:01 60.2M
 * Connection #0 to host localhost left intact

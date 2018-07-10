@@ -102620,8 +102620,8 @@
    "Oauth2AccessToken": {
     "type": "oauth2",
     "flow": "accessCode",
-    "authorizationUrl": "https://10.0.0.13:8443/oauth/authorize",
-    "tokenUrl": "https://10.0.0.13:8443/oauth/token",
+    "authorizationUrl": "https://10.1.0.231:8443/oauth/authorize",
+    "tokenUrl": "https://10.1.0.231:8443/oauth/token",
     "scopes": {
      "user:check-access": "Read-only access to view your privileges (for example, \"can I create builds?\")",
      "user:full": "Full read/write access with all of your permissions",
@@ -102633,7 +102633,7 @@
    "Oauth2Implicit": {
     "type": "oauth2",
     "flow": "implicit",
-    "authorizationUrl": "https://10.0.0.13:8443/oauth/authorize",
+    "authorizationUrl": "https://10.1.0.231:8443/oauth/authorize",
     "scopes": {
      "user:check-access": "Read-only access to view your privileges (for example, \"can I create builds?\")",
      "user:full": "Full read/write access with all of your permissions",

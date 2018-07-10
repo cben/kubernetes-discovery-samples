@@ -1,0 +1,7 @@
+HTTP/2 403 
+cache-control: no-store
+content-type: text/plain
+x-content-type-options: nosniff
+content-length: 110
+date: Mon, 09 Jul 2018 13:40:18 GMT
+

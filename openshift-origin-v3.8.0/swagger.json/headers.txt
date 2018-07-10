@@ -1,0 +1,10 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: no-store
+content-type: application/json
+etag: "B8AB169940FF7DE89B087D88830791FF2E517AB12BF1084605D8F123BEF5E64F3988FBD9B97622ED2BFE3F1D45B440B37D0789AC9D9046D4BC779903D3FE413A"
+last-modified: Mon, 09 Jul 2018 13:43:20 GMT
+vary: Accept-Encoding
+content-length: 2625280
+date: Mon, 09 Jul 2018 13:43:28 GMT
+

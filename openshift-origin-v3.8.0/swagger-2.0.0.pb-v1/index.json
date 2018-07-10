@@ -27172,13 +27172,13 @@ M
 
 Oauth2AccessToken b
 
-Oauth2Implicit jò
+Oauth2Implicit jõ
 
 M
 BearerToken><
 apiKeyauthorizationheader"Bearer Token authentication
-£
-Oauth2AccessToken2Š
+¥
+Oauth2AccessToken2Œ
 oauth2
 accessCode§
 c
@@ -27190,9 +27190,9 @@ m
 v
 user:list-projects`Read-only access to list your projects and view their metadata (display name, description, etc.)
 –
-user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"&https://10.0.0.13:8443/oauth/authorize*"https://10.0.0.13:8443/oauth/token
-ú
-Oauth2Implicitçä
+user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"'https://10.1.0.231:8443/oauth/authorize*#https://10.1.0.231:8443/oauth/token
+û
+Oauth2Implicitèå
 oauth2implicit§
 c
 user:check-accessNRead-only access to view your privileges (for example, "can I create builds?")
@@ -27203,4 +27203,4 @@ m
 v
 user:list-projects`Read-only access to list your projects and view their metadata (display name, description, etc.)
 –
-user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"&https://10.0.0.13:8443/oauth/authorize
+user:list-scoped-projectsyRead-only access to list your projects viewable with this token and view their metadata (display name, description, etc.)"'https://10.1.0.231:8443/oauth/authorize

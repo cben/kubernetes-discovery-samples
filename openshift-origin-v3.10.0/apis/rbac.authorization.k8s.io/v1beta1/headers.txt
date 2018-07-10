@@ -1,0 +1,6 @@
+HTTP/2 200 
+cache-control: no-store
+content-type: application/json
+content-length: 1311
+date: Tue, 10 Jul 2018 16:20:49 GMT
+

@@ -6,7 +6,7 @@
   "serverAddressByClientCIDRs": [
     {
       "clientCIDR": "0.0.0.0/0",
-      "serverAddress": "10.0.0.13:8443"
+      "serverAddress": "192.168.43.168:8443"
     }
   ]
 }
