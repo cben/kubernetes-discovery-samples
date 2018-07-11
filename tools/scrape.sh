@@ -48,8 +48,9 @@ scrape ""
 echo "====== Recorded version ====="
 scrape "version"
 result "version"
-scrape "version/openshift"
-result "version/openshift"
+if scrape "version/openshift" --fail; then
+  result "version/openshift"
+fi
 
 echo "Iterating .paths from /"
 for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")'); do
