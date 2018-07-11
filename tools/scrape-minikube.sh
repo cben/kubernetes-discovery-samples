@@ -1,32 +1,38 @@
 #!/bin/bash
-# Usage: scrape-minikube.sh 0.28.0
-# Takes version *of minikube*.  List: https://github.com/kubernetes/minikube/tags
-# Symlinks resulting kubernetes version afterwards.
+# Usage: scrape-minikube.sh MINIKUBE_VERSION KUBERNETES_VERSION
+# minikube versions: https://github.com/kubernetes/minikube/tags
 
 set -e -u -o pipefail
 
 cd "$(dirname "$(dirname "$0")")"  # run from root of repo.
 
-VERSION="v$1"
-MINIKUBE="tools/minikube-$VERSION"
+MINIKUBE_VERSION="v$1"
+VERSION="v$2"
+MINIKUBE="tools/minikube-$MINIKUBE_VERSION"
+
+verbose () {
+  echo "$@"
+  "$@"
+}
 
 if ! [ -f "$MINIKUBE" ]; then
   echo "Downloading $MINIKUBE ..."
-  curl --fail --location --output "$MINIKUBE".download https://storage.googleapis.com/minikube/releases/"$VERSION"/minikube-linux-amd64
+  curl --fail --location --output "$MINIKUBE".download https://storage.googleapis.com/minikube/releases/"$MINIKUBE_VERSION"/minikube-linux-amd64
   mv "$MINIKUBE"{.download,}
 fi
 chmod +x "$MINIKUBE"
 
-"$MINIKUBE" start --vm-driver=none
+if verbose "$MINIKUBE" start --help 2>&1 | grep 'vm-driver' | grep 'none'; then
+  verbose sudo "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images --vm-driver=none
+else
+  verbose "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images
+fi
 IP="$("$MINIKUBE" ip)"
 
-# We don't know kubernetes version yet
-export DIR="minikube-$VERSION"
+export DIR="kubernetes-$VERSION"
 env URL="https://$IP:8443" WAIT_OKS="healthz" tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
-
-ln -s $DIR kubernetes-"$(jq --raw-output .gitVersion "$DIR"/version/index.json)"
 
 echo
 echo "# When done run:"
-echo "$MINIKUBE stop"
-#"$MINIKUBE" stop
+echo "$MINIKUBE delete"
+#verbose "$MINIKUBE" delete
