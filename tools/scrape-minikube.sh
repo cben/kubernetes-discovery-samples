@@ -22,17 +22,14 @@ if ! [ -f "$MINIKUBE" ]; then
 fi
 chmod +x "$MINIKUBE"
 
-if verbose "$MINIKUBE" start --help 2>&1 | grep 'vm-driver' | grep 'none'; then
-  verbose sudo "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images --vm-driver=none
-else
-  verbose "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images
-fi
+verbose "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images
+
 IP="$("$MINIKUBE" ip)"
 
 export DIR="kubernetes-$VERSION"
 env URL="https://$IP:8443" WAIT_OKS="healthz" tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
 
 echo
-echo "# When done run:"
-echo "$MINIKUBE delete"
-#verbose "$MINIKUBE" delete
+#echo "# When done run:"
+#echo "$MINIKUBE delete"
+verbose "$MINIKUBE" delete
