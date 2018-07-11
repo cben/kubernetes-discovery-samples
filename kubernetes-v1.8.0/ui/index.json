@@ -1,0 +1,11 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "no endpoints available for service \"kubernetes-dashboard\"",
+  "reason": "ServiceUnavailable",
+  "code": 503
+}

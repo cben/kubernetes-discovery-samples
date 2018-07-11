@@ -1,0 +1,11 @@
+HTTP/2 307 
+location: /api/v1/namespaces/kube-system/services/kubernetes-dashboard/proxy
+content-type: text/html; charset=utf-8
+content-length: 102
+date: Wed, 11 Jul 2018 11:44:24 GMT
+
+HTTP/2 503 
+content-type: application/json
+content-length: 210
+date: Wed, 11 Jul 2018 11:44:24 GMT
+
