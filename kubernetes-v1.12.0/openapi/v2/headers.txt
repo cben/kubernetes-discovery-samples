@@ -1,0 +1,10 @@
+HTTP/2 200 
+accept-ranges: bytes
+content-type: text/plain; charset=utf-8
+etag: "12FDC03C6EEDB38F594DA9A4C99D898EF93ACD0D63270F32739FA8CEAB0EC4B14F828E22A97CE540AE042C4011922BA45F128C6CF866C532A4C1F113B2B08887"
+last-modified: Tue, 09 Oct 2018 09:24:18 GMT
+vary: Accept-Encoding
+vary: Accept
+content-length: 3622392
+date: Tue, 09 Oct 2018 09:25:00 GMT
+
