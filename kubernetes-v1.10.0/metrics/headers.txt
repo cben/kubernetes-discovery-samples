@@ -1,5 +1,0 @@
-HTTP/2 200 
-content-type: text/plain; version=0.0.4
-content-length: 1242091
-date: Tue, 10 Jul 2018 16:28:14 GMT
-

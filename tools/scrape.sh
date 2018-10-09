@@ -52,13 +52,13 @@ if scrape "version/openshift" --fail; then
   result "version/openshift"
 fi
 
-echo "Iterating .paths from /"
-for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")' | grep --invert-match -e '^/metrics' -e '^/logs'); do
+echo "--- Iterating .paths from / ---"
+for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")' | grep --invert-match -e '^metrics\b' -e '^logs\b'); do
   scrape "$PTH"
 done
 
 # TODO oapi/ is specific to openshift.
-echo "Iterating .versions from api/ and oapi/"
+echo "--- Iterating .versions from api/ and oapi/ ---"
 for GROUP in api oapi; do
   for APIVER in $(result "$GROUP" | jq --raw-output '.versions[]'); do
     scrape "$GROUP/$APIVER"

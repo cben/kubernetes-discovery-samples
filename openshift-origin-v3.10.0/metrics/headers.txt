@@ -1,7 +1,0 @@
-HTTP/2 403 
-cache-control: no-store
-content-type: application/json
-x-content-type-options: nosniff
-content-length: 282
-date: Tue, 10 Jul 2018 16:20:47 GMT
-
