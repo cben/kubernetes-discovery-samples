@@ -53,7 +53,7 @@ if scrape "version/openshift" --fail; then
 fi
 
 echo "Iterating .paths from /"
-for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")'); do
+for PTH in $(result "" | jq --raw-output '.paths[] | ltrimstr("/")' | grep --invert-match -e '^/metrics' -e '^/logs'); do
   scrape "$PTH"
 done
 
