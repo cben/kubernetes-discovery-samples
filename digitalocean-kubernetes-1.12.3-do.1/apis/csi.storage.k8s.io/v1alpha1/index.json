@@ -1,0 +1,39 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "csi.storage.k8s.io/v1alpha1",
+  "resources": [
+    {
+      "name": "csinodeinfos",
+      "singularName": "csinodeinfo",
+      "namespaced": false,
+      "kind": "CSINodeInfo",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "csidrivers",
+      "singularName": "csidriver",
+      "namespaced": false,
+      "kind": "CSIDriver",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

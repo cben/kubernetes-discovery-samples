@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: env URL=... DIR=... WAIT_OKS='healthz healtz/ready' scrape.sh [curl_options...]
+# Usage: env URL=... DIR=... WAIT_OKS='healthz healthz/ready' scrape.sh [curl_options...]
 
 set -e -u -o pipefail
 
