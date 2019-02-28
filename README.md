@@ -34,6 +34,8 @@ Obviously I can't collect all CRDs, but I started to collect some weird ones (lo
 
 - [ ] Currently these are just the `CustomResourceDefinition` objects, NOT yet reflected in discovery results!
 
+A good place with many CRDs is https://github.com/operator-framework/community-operators
+
 # License
 
 [Apache License, Version 2.0](http://www.apache.org/licenses/).
