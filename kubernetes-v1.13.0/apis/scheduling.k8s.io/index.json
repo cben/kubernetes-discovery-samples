@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "scheduling.k8s.io",
+  "versions": [
+    {
+      "groupVersion": "scheduling.k8s.io/v1beta1",
+      "version": "v1beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "scheduling.k8s.io/v1beta1",
+    "version": "v1beta1"
+  }
+}
