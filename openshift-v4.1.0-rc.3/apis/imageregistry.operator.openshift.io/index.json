@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "imageregistry.operator.openshift.io",
+  "versions": [
+    {
+      "groupVersion": "imageregistry.operator.openshift.io/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "imageregistry.operator.openshift.io/v1",
+    "version": "v1"
+  }
+}

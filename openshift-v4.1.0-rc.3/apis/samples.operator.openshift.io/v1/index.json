@@ -1,0 +1,34 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "samples.operator.openshift.io/v1",
+  "resources": [
+    {
+      "name": "configs",
+      "singularName": "config",
+      "namespaced": false,
+      "kind": "Config",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "configs/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "Config",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

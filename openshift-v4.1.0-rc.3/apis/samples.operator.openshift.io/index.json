@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "samples.operator.openshift.io",
+  "versions": [
+    {
+      "groupVersion": "samples.operator.openshift.io/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "samples.operator.openshift.io/v1",
+    "version": "v1"
+  }
+}

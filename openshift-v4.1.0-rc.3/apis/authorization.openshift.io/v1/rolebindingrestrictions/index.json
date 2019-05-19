@@ -1,0 +1,15 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "rolebindingrestrictions.authorization.openshift.io is forbidden: User \"system:anonymous\" cannot list resource \"rolebindingrestrictions\" in API group \"authorization.openshift.io\" at the cluster scope",
+  "reason": "Forbidden",
+  "details": {
+    "group": "authorization.openshift.io",
+    "kind": "rolebindingrestrictions"
+  },
+  "code": 403
+}

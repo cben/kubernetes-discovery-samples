@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "packages.operators.coreos.com",
+  "versions": [
+    {
+      "groupVersion": "packages.operators.coreos.com/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "packages.operators.coreos.com/v1",
+    "version": "v1"
+  }
+}

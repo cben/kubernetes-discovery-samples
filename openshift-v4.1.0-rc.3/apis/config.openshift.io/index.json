@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "config.openshift.io",
+  "versions": [
+    {
+      "groupVersion": "config.openshift.io/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "config.openshift.io/v1",
+    "version": "v1"
+  }
+}

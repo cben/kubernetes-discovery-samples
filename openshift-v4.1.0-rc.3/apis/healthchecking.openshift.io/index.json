@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "healthchecking.openshift.io",
+  "versions": [
+    {
+      "groupVersion": "healthchecking.openshift.io/v1alpha1",
+      "version": "v1alpha1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "healthchecking.openshift.io/v1alpha1",
+    "version": "v1alpha1"
+  }
+}

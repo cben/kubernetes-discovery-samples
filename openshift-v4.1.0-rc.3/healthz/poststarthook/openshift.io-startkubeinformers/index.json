@@ -1,0 +1,14 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "forbidden: User \"system:anonymous\" cannot get path \"/healthz/poststarthook/openshift.io-startkubeinformers\"",
+  "reason": "Forbidden",
+  "details": {
+    
+  },
+  "code": 403
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "operators.coreos.com",
+  "versions": [
+    {
+      "groupVersion": "operators.coreos.com/v1",
+      "version": "v1"
+    },
+    {
+      "groupVersion": "operators.coreos.com/v1alpha2",
+      "version": "v1alpha2"
+    },
+    {
+      "groupVersion": "operators.coreos.com/v1alpha1",
+      "version": "v1alpha1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "operators.coreos.com/v1",
+    "version": "v1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "healthchecking.openshift.io/v1alpha1",
+  "resources": [
+    {
+      "name": "machinehealthchecks",
+      "singularName": "machinehealthcheck",
+      "namespaced": true,
+      "kind": "MachineHealthCheck",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

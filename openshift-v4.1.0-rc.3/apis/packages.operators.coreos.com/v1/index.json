@@ -1,0 +1,17 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "packages.operators.coreos.com/v1",
+  "resources": [
+    {
+      "name": "packagemanifests",
+      "singularName": "",
+      "namespaced": true,
+      "kind": "PackageManifest",
+      "verbs": [
+        "get",
+        "list"
+      ]
+    }
+  ]
+}

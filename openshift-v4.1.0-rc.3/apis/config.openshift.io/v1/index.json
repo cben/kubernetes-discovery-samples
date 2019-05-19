@@ -1,0 +1,316 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "config.openshift.io/v1",
+  "resources": [
+    {
+      "name": "oauths",
+      "singularName": "oauth",
+      "namespaced": false,
+      "kind": "OAuth",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "oauths/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "OAuth",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "apiservers",
+      "singularName": "apiserver",
+      "namespaced": false,
+      "kind": "APIServer",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "ingresses",
+      "singularName": "ingress",
+      "namespaced": false,
+      "kind": "Ingress",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "networks",
+      "singularName": "network",
+      "namespaced": false,
+      "kind": "Network",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "schedulers",
+      "singularName": "scheduler",
+      "namespaced": false,
+      "kind": "Scheduler",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "featuregates",
+      "singularName": "featuregate",
+      "namespaced": false,
+      "kind": "FeatureGate",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "clusterversions",
+      "singularName": "clusterversion",
+      "namespaced": false,
+      "kind": "ClusterVersion",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "clusterversions/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "ClusterVersion",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "builds",
+      "singularName": "build",
+      "namespaced": false,
+      "kind": "Build",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "consoles",
+      "singularName": "console",
+      "namespaced": false,
+      "kind": "Console",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "consoles/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "Console",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "infrastructures",
+      "singularName": "infrastructure",
+      "namespaced": false,
+      "kind": "Infrastructure",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "authentications",
+      "singularName": "authentication",
+      "namespaced": false,
+      "kind": "Authentication",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "authentications/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "Authentication",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "clusteroperators",
+      "singularName": "clusteroperator",
+      "namespaced": false,
+      "kind": "ClusterOperator",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "shortNames": [
+        "co"
+      ]
+    },
+    {
+      "name": "clusteroperators/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "ClusterOperator",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "images",
+      "singularName": "image",
+      "namespaced": false,
+      "kind": "Image",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "images/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "Image",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "projects",
+      "singularName": "project",
+      "namespaced": false,
+      "kind": "Project",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "dnses",
+      "singularName": "dns",
+      "namespaced": false,
+      "kind": "DNS",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    }
+  ]
+}

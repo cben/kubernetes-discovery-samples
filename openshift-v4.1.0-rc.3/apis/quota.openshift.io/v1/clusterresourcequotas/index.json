@@ -1,0 +1,15 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "clusterresourcequotas.quota.openshift.io is forbidden: User \"system:anonymous\" cannot list resource \"clusterresourcequotas\" in API group \"quota.openshift.io\" at the cluster scope",
+  "reason": "Forbidden",
+  "details": {
+    "group": "quota.openshift.io",
+    "kind": "clusterresourcequotas"
+  },
+  "code": 403
+}

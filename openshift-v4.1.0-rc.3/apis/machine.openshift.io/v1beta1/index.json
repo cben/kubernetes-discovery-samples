@@ -1,0 +1,74 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "machine.openshift.io/v1beta1",
+  "resources": [
+    {
+      "name": "machinesets",
+      "singularName": "machineset",
+      "namespaced": true,
+      "kind": "MachineSet",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "machinesets/status",
+      "singularName": "",
+      "namespaced": true,
+      "kind": "MachineSet",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "machinesets/scale",
+      "singularName": "",
+      "namespaced": true,
+      "group": "autoscaling",
+      "version": "v1",
+      "kind": "Scale",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    },
+    {
+      "name": "machines",
+      "singularName": "machine",
+      "namespaced": true,
+      "kind": "Machine",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ]
+    },
+    {
+      "name": "machines/status",
+      "singularName": "",
+      "namespaced": true,
+      "kind": "Machine",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "forbidden: User \"system:anonymous\" cannot get path \"/readyz/poststarthook/kube-apiserver-requestheader-reload\"",
+  "reason": "Forbidden",
+  "details": {
+    
+  },
+  "code": 403
+}

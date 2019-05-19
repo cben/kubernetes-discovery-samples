@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "k8s.cni.cncf.io",
+  "versions": [
+    {
+      "groupVersion": "k8s.cni.cncf.io/v1",
+      "version": "v1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "k8s.cni.cncf.io/v1",
+    "version": "v1"
+  }
+}

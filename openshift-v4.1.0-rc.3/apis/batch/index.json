@@ -1,0 +1,19 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "batch",
+  "versions": [
+    {
+      "groupVersion": "batch/v1",
+      "version": "v1"
+    },
+    {
+      "groupVersion": "batch/v1beta1",
+      "version": "v1beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "batch/v1",
+    "version": "v1"
+  }
+}

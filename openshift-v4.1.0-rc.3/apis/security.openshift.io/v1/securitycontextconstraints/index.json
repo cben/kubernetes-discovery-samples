@@ -1,0 +1,15 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {
+    
+  },
+  "status": "Failure",
+  "message": "securitycontextconstraints.security.openshift.io is forbidden: User \"system:anonymous\" cannot list resource \"securitycontextconstraints\" in API group \"security.openshift.io\" at the cluster scope",
+  "reason": "Forbidden",
+  "details": {
+    "group": "security.openshift.io",
+    "kind": "securitycontextconstraints"
+  },
+  "code": 403
+}
