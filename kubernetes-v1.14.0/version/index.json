@@ -1,0 +1,11 @@
+{
+  "major": "1",
+  "minor": "14",
+  "gitVersion": "v1.14.0",
+  "gitCommit": "641856db18352033a0d96dbc99153fa3b27298e5",
+  "gitTreeState": "clean",
+  "buildDate": "2019-03-25T15:45:25Z",
+  "goVersion": "go1.12.1",
+  "compiler": "gc",
+  "platform": "linux/amd64"
+}

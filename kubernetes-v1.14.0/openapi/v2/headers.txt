@@ -1,0 +1,10 @@
+HTTP/2 200 
+accept-ranges: bytes
+content-type: text/plain; charset=utf-8
+etag: "EDB747E59D2E2B91B3F2ADF9DF6E289B479873576E4B00B3B4152513E2C60CDFE56459227418F0D67B0D0D605D49285777898F829730AD398418F0FF6D5BA1EF"
+last-modified: Sun, 19 May 2019 09:05:19 GMT
+vary: Accept-Encoding
+vary: Accept
+content-length: 3430588
+date: Sun, 19 May 2019 09:06:33 GMT
+
