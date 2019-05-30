@@ -48,8 +48,13 @@ scrape ""
 echo "====== Recorded version ====="
 scrape "version"
 result "version"
+# openshift v3
 if scrape "version/openshift" --fail; then
   result "version/openshift"
+fi
+# openshift v4, as of now needs `-H Authorization: ...` with high priveledges
+if scrape "apis/config.openshift.io/v1/clusterversions" --fail; then
+  result "apis/config.openshift.io/v1/clusterversions" | jq .
 fi
 
 echo "--- Iterating .paths from / ---"
