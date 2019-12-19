@@ -5,7 +5,7 @@ Outputs of GET on simple paths like `/api` and `/apis/batch/v1`, collected on va
 (tip: openshift 3.x versions are derived from corresponding kubernetes 1.x)
 
 TODO: add other kubernetes distros e.g. [rancher](rancher.com)...
-*PRs welcome!*
+*PRs welcome!  Requests also welcome, open an issue asking for what you'd like to see.*
 
 ## Direct GitHub Pages access
 
@@ -15,7 +15,7 @@ as the endpoint into kuberentes client libraries!  There are some deviations:
 - [ ] Paths like `api/v1` are implemented as directories so they all redirect to `api/v1/`.
 - [ ] Some paths that gave HTTP 403 errors are served here as 200 OK.
 
-and of course it's not a real API, you can run any actions...
+and of course it's not a real API, you can't run any actions...
 
 If you're viewing this from GitHub Pages, it won't show you the list of  subdirectories, see <https://github.com/cben/kubernetes-discovery-samples/>
 
@@ -25,8 +25,9 @@ To help answer questions like "can I assume `verbs` was always there? When was i
 
 # How?
 
-See [tools/](tools/) directory.
-I started from openshift, not kubernetes, simply because it can be run as a convenient [all-in-one container](https://docs.openshift.org/3.7/getting_started/administrators.html#running-in-a-docker-container).
+See [tools/](tools/) directory.  
+- Low-level: create a cluster by any means necessary (even on a cloud provider), run `scrape.sh`.
+- High-level: some scripts there to create, scrape, and destroy a local cluster.  TODO: add more.
 
 ## TODO: Custom Resource Definitions
 
