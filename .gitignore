@@ -1,2 +1,3 @@
 /tools/minikube-*
 curl-verbose.txt
+auth.tmp

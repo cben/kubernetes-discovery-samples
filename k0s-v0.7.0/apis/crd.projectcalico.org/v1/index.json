@@ -1,0 +1,262 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "crd.projectcalico.org/v1",
+  "resources": [
+    {
+      "name": "bgpconfigurations",
+      "singularName": "bgpconfiguration",
+      "namespaced": false,
+      "kind": "BGPConfiguration",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "APoTH7a/ve0="
+    },
+    {
+      "name": "felixconfigurations",
+      "singularName": "felixconfiguration",
+      "namespaced": false,
+      "kind": "FelixConfiguration",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "3qRBCjXVVr0="
+    },
+    {
+      "name": "hostendpoints",
+      "singularName": "hostendpoint",
+      "namespaced": false,
+      "kind": "HostEndpoint",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "lcuper2cjNA="
+    },
+    {
+      "name": "ipamhandles",
+      "singularName": "ipamhandle",
+      "namespaced": false,
+      "kind": "IPAMHandle",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "1flM+RLQVBQ="
+    },
+    {
+      "name": "blockaffinities",
+      "singularName": "blockaffinity",
+      "namespaced": false,
+      "kind": "BlockAffinity",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "qxZn+fNKF0o="
+    },
+    {
+      "name": "clusterinformations",
+      "singularName": "clusterinformation",
+      "namespaced": false,
+      "kind": "ClusterInformation",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "IwzLAc88EAI="
+    },
+    {
+      "name": "globalnetworksets",
+      "singularName": "globalnetworkset",
+      "namespaced": false,
+      "kind": "GlobalNetworkSet",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "v7TCLk56Q+4="
+    },
+    {
+      "name": "kubecontrollersconfigurations",
+      "singularName": "kubecontrollersconfiguration",
+      "namespaced": false,
+      "kind": "KubeControllersConfiguration",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "SNq1jmkokTw="
+    },
+    {
+      "name": "networksets",
+      "singularName": "networkset",
+      "namespaced": true,
+      "kind": "NetworkSet",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "v3eqVp2rlK0="
+    },
+    {
+      "name": "bgppeers",
+      "singularName": "bgppeer",
+      "namespaced": false,
+      "kind": "BGPPeer",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "LEh3VkcJdMA="
+    },
+    {
+      "name": "ipamblocks",
+      "singularName": "ipamblock",
+      "namespaced": false,
+      "kind": "IPAMBlock",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "DC5UT/Mf3xs="
+    },
+    {
+      "name": "networkpolicies",
+      "singularName": "networkpolicy",
+      "namespaced": true,
+      "kind": "NetworkPolicy",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "vyIiswN6deY="
+    },
+    {
+      "name": "globalnetworkpolicies",
+      "singularName": "globalnetworkpolicy",
+      "namespaced": false,
+      "kind": "GlobalNetworkPolicy",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "zve4ObHFE9A="
+    },
+    {
+      "name": "ipamconfigs",
+      "singularName": "ipamconfig",
+      "namespaced": false,
+      "kind": "IPAMConfig",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "Ey7CGwJ1xJ4="
+    },
+    {
+      "name": "ippools",
+      "singularName": "ippool",
+      "namespaced": false,
+      "kind": "IPPool",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "3/m0Z1pQb+k="
+    }
+  ]
+}

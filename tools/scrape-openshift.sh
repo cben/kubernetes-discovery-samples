@@ -16,10 +16,10 @@ docker-verbose () {
 }
 
 # This may fail with "Conflict. The container name "/origin-v1.2.0" is already in use by container ..."
-if docker ps -a | grep "$NAME"; then
+if docker ps --all | grep "$NAME"; then
   docker-verbose start "$NAME"
 else
-  docker-verbose run -d --name "$NAME" \
+  docker-verbose run --detach --name "$NAME" \
        --privileged --pid=host --net=host \
        -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys -v /var/lib/docker:/var/lib/docker:rw \
        -v /var/lib/origin/openshift.local.volumes:/var/lib/origin/openshift.local.volumes \
@@ -32,5 +32,5 @@ env DIR=openshift-origin-"$VERSION" URL=https://localhost:8443 WAIT_OKS="healthz
 echo
 #docker ps --all --filter=name="$NAME"
 #echo "# When done run:"
-#echo "docker rm -f '$NAME'"
-docker-verbose rm -f "$NAME"
+#echo "docker rm --force '$NAME'"
+docker-verbose rm --force "$NAME"

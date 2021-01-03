@@ -1,0 +1,11 @@
+HTTP/2 200 
+accept-ranges: bytes
+cache-control: no-cache, private
+content-type: text/plain; charset=utf-8
+etag: "F9029A02333CCE07D9C66A3F7203FE5424A88B856A0C8D81F672670F081D9794148D3073B4F8A0808DC215C5E8B5A73FFBAF7F44CACE93ABD84588ABF48FD0C1"
+last-modified: Sun, 03 Jan 2021 09:24:54 GMT
+vary: Accept-Encoding
+vary: Accept
+content-length: 3614998
+date: Sun, 03 Jan 2021 09:25:02 GMT
+
