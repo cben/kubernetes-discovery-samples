@@ -27,7 +27,7 @@ verbose "$MINIKUBE" start --kubernetes-version="$VERSION" --cache-images
 IP="$("$MINIKUBE" ip)"
 
 export DIR="kubernetes-$VERSION"
-env URL="https://$IP:8443" WAIT_OKS="healthz" tools/scrape.sh --cert /home/bpaskinc/.minikube/apiserver.crt --key /home/bpaskinc/.minikube/apiserver.key
+env URL="https://$IP:8443" WAIT_OKS="healthz" tools/scrape.sh --cert $HOME/.minikube/apiserver.crt --key $HOME/.minikube/apiserver.key
 
 echo
 #echo "# When done run:"
