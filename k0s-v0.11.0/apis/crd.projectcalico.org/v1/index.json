@@ -1,0 +1,24 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "crd.projectcalico.org/v1",
+  "resources": [
+    {
+      "name": "bgpconfigurations",
+      "singularName": "bgpconfiguration",
+      "namespaced": false,
+      "kind": "BGPConfiguration",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "APoTH7a/ve0="
+    }
+  ]
+}
