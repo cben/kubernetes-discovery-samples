@@ -25,10 +25,6 @@ fi
 export URL=https://localhost:6443
 export DIR=k0s-"$VERSION"
 
-until curl --insecure --fail "$URL/healthz" | grep ok; do
-  sleep 1
-done
-
 # TODO: extract kubeconfig auth unpacking into helper script.
 
 # Absolute path because scrape.sh changes in $DIR.
@@ -36,13 +32,23 @@ done
 AUTHDIR="$PWD/auth.tmp"
 mkdir --parents "$AUTHDIR"
 
-docker exec "$NAME" cat /var/lib/k0s/pki/admin.conf > "$AUTHDIR/kubeconfig"
+echo "== Polling for kubeconfig =="
+until docker exec "$NAME" cat /var/lib/k0s/pki/admin.conf > "$AUTHDIR/kubeconfig"; do
+  sleep 1
+done
 cat "$AUTHDIR/kubeconfig" | yq '.clusters[0].cluster["certificate-authority-data"]' --raw-output | base64 --decode > "$AUTHDIR/server-ca"
 cat "$AUTHDIR/kubeconfig" | yq '.users[0].user["client-certificate-data"]' --raw-output | base64 --decode > "$AUTHDIR/client-cert"
 cat "$AUTHDIR/kubeconfig" | yq '.users[0].user["client-key-data"]' --raw-output | base64 --decode > "$AUTHDIR/client-key"
 cat "$AUTHDIR/client-key" "$AUTHDIR/client-cert" > "$AUTHDIR/client-key+cert"
 
-env WAIT_OKS="healthz" tools/scrape.sh --cacert "$AUTHDIR/server-ca" --cert "$AUTHDIR/client-cert" --key "$AUTHDIR/client-key"
+CURL_OPTIONS=(--cacert "$AUTHDIR/server-ca" --cert "$AUTHDIR/client-cert" --key "$AUTHDIR/client-key")
+
+echo "== Polling $URL/healthz =="
+until curl --fail "${CURL_OPTIONS[@]}" "$URL/healthz" | grep ok; do
+  sleep 1
+done
+
+env WAIT_OKS="healthz" tools/scrape.sh "${CURL_OPTIONS[@]}"
 
 echo
 #docker ps --all --filter=name="$NAME"
