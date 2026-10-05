@@ -16,7 +16,7 @@ docker-verbose () {
 }
 
 # This may fail with "Conflict. The container name "/k0s-v1.2.0" is already in use by container ..."
-if docker ps --all | grep "$NAME"; then
+if sudo docker ps --all | grep "$NAME"; then
   docker-verbose start "$NAME"
 else
   docker-verbose run --detach --name "$NAME" --hostname controller --privileged -v /var/lib/k0s -p 6443:6443 "k0sproject/k0s:$VERSION"
@@ -33,7 +33,7 @@ AUTHDIR="$PWD/auth.tmp"
 mkdir --parents "$AUTHDIR"
 
 echo "== Polling for kubeconfig =="
-until docker exec "$NAME" cat /var/lib/k0s/pki/admin.conf > "$AUTHDIR/kubeconfig"; do
+until sudo docker exec "$NAME" cat /var/lib/k0s/pki/admin.conf > "$AUTHDIR/kubeconfig"; do
   sleep 1
 done
 cat "$AUTHDIR/kubeconfig" | yq '.clusters[0].cluster["certificate-authority-data"]' --raw-output | base64 --decode > "$AUTHDIR/server-ca"

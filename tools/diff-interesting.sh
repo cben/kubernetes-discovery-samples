@@ -21,7 +21,10 @@ diff --recursive --unified=1 --color \
      --ignore-matching-lines='^\(< \)\?[Ll]ast-[Mm]odified' \
      --ignore-matching-lines='^\(> \)\?[Uu]ser-[Aa]gent:' \
      --ignore-matching-lines='^\(< \)\?[Cc]ontent-[Ll]ength:' \
+     --ignore-matching-lines='^\(< \)\?[Ee]tag:' \
      --ignore-matching-lines='^\(< \)\?[Aa]udit-[Ii]d:' \
+     --ignore-matching-lines='^\(< \)\?x-kubernetes-pf-flowschema-uid:' \
+     --ignore-matching-lines='^\(< \)\?x-kubernetes-pf-prioritylevel-uid:' \
      --ignore-matching-lines='--:--:--' \
      --ignore-matching-lines='[}{] \[[0-9]* bytes data\]' \
      "$@"
