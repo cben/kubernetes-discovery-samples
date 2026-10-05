@@ -1,0 +1,180 @@
+
+apiserver flagz
+Warning: This endpoint is not meant to be machine parseable, has no formatting compatibility guarantees and is for debugging purposes only.
+admission-control: []
+admission-control-config-file: 
+advertise-address: 172.17.0.2
+aggregator-reject-forwarding-redirect: true
+allow-metric-labels: []
+allow-metric-labels-manifest: 
+allow-privileged: true
+anonymous-auth: false
+api-audiences: [https://kubernetes.default.svc,system:konnectivity-server]
+apiserver-count: 1
+audit-log-batch-buffer-size: 10000
+audit-log-batch-max-size: 1
+audit-log-batch-max-wait: 0s
+audit-log-batch-throttle-burst: 0
+audit-log-batch-throttle-enable: false
+audit-log-batch-throttle-qps: 0
+audit-log-compress: false
+audit-log-format: json
+audit-log-maxage: 366
+audit-log-maxbackup: 100
+audit-log-maxsize: 100
+audit-log-mode: blocking
+audit-log-path: 
+audit-log-truncate-enabled: false
+audit-log-truncate-max-batch-size: 10485760
+audit-log-truncate-max-event-size: 102400
+audit-log-version: audit.k8s.io/v1
+audit-policy-file: 
+audit-webhook-batch-buffer-size: 10000
+audit-webhook-batch-initial-backoff: 10s
+audit-webhook-batch-max-size: 400
+audit-webhook-batch-max-wait: 30s
+audit-webhook-batch-throttle-burst: 15
+audit-webhook-batch-throttle-enable: true
+audit-webhook-batch-throttle-qps: 10
+audit-webhook-config-file: 
+audit-webhook-initial-backoff: 10s
+audit-webhook-mode: batch
+audit-webhook-truncate-enabled: false
+audit-webhook-truncate-max-batch-size: 10485760
+audit-webhook-truncate-max-event-size: 102400
+audit-webhook-version: audit.k8s.io/v1
+authentication-config: 
+authentication-token-webhook-cache-ttl: 2m0s
+authentication-token-webhook-config-file: 
+authentication-token-webhook-version: v1beta1
+authorization-config: 
+authorization-mode: [Node,RBAC]
+authorization-policy-file: 
+authorization-webhook-cache-authorized-ttl: 5m0s
+authorization-webhook-cache-unauthorized-ttl: 30s
+authorization-webhook-config-file: 
+authorization-webhook-version: v1beta1
+bind-address: 0.0.0.0
+cert-dir: /var/run/kubernetes
+client-ca-file: /var/lib/k0s/pki/ca.crt
+contention-profiling: false
+coordinated-leadership-lease-duration: 15s
+coordinated-leadership-renew-deadline: 10s
+coordinated-leadership-retry-period: 2s
+cors-allowed-origins: []
+debug-socket-path: 
+default-not-ready-toleration-seconds: 300
+default-unreachable-toleration-seconds: 300
+default-watch-cache-size: 100
+delete-collection-workers: 1
+disable-admission-plugins: []
+disable-http2-serving: false
+disabled-metrics: []
+egress-selector-config-file: /var/lib/k0s/konnectivity.conf
+emulated-version: []
+emulation-forward-compatible: false
+enable-admission-plugins: [NodeRestriction]
+enable-aggregator-routing: false
+enable-bootstrap-token-auth: true
+enable-garbage-collector: true
+enable-logs-handler: false
+enable-priority-and-fairness: true
+encryption-provider-config: 
+encryption-provider-config-automatic-reload: false
+endpoint-reconciler-type: lease
+etcd-cafile: /var/lib/k0s/pki/etcd/ca.crt
+etcd-certfile: /var/lib/k0s/pki/apiserver-etcd-client.crt
+etcd-compaction-interval: 5m0s
+etcd-count-metric-poll-period: 1m0s
+etcd-db-metric-poll-interval: 30s
+etcd-healthcheck-timeout: 2s
+etcd-keyfile: /var/lib/k0s/pki/apiserver-etcd-client.key
+etcd-prefix: /registry
+etcd-readycheck-timeout: 2s
+etcd-servers: [https://127.0.0.1:2379]
+etcd-servers-overrides: []
+event-ttl: 1h0m0s
+external-hostname: 172.17.0.2
+feature-gates: 
+goaway-chance: 0
+help: false
+http2-max-streams-per-connection: 0
+kubelet-certificate-authority: /var/lib/k0s/pki/ca.crt
+kubelet-client-certificate: /var/lib/k0s/pki/apiserver-kubelet-client.crt
+kubelet-client-key: /var/lib/k0s/pki/apiserver-kubelet-client.key
+kubelet-port: 10250
+kubelet-preferred-address-types: [InternalIP,ExternalIP,Hostname]
+kubelet-read-only-port: 10255
+kubelet-timeout: 5s
+kubernetes-service-node-port: 0
+lease-reuse-duration-seconds: 60
+livez-grace-period: 0s
+log-flush-frequency: 5s
+log-json-info-buffer-size: 0
+log-json-split-stream: false
+log-text-info-buffer-size: 0
+log-text-split-stream: false
+logging-format: text
+max-connection-bytes-per-sec: 0
+max-mutating-requests-inflight: 200
+max-requests-inflight: 400
+min-compatibility-version: []
+min-request-timeout: 1800
+oidc-ca-file: 
+oidc-client-id: 
+oidc-groups-claim: 
+oidc-groups-prefix: 
+oidc-issuer-url: 
+oidc-required-claim: 
+oidc-signing-algs: [RS256]
+oidc-username-claim: sub
+oidc-username-prefix: 
+peer-advertise-ip: 
+peer-advertise-port: 
+peer-ca-file: 
+permit-address-sharing: false
+permit-port-sharing: false
+profiling: false
+proxy-client-cert-file: /var/lib/k0s/pki/front-proxy-client.crt
+proxy-client-key-file: /var/lib/k0s/pki/front-proxy-client.key
+request-timeout: 1m0s
+requestheader-allowed-names: [front-proxy-client]
+requestheader-client-ca-file: /var/lib/k0s/pki/front-proxy-ca.crt
+requestheader-extra-headers-prefix: [X-Remote-Extra-]
+requestheader-group-headers: [X-Remote-Group]
+requestheader-uid-headers: []
+requestheader-username-headers: [X-Remote-User]
+runtime-config: 
+runtime-config-emulation-forward-compatible: false
+secure-port: 6443
+service-account-extend-token-expiration: true
+service-account-issuer: [https://kubernetes.default.svc]
+service-account-jwks-uri: https://kubernetes.default.svc/openid/v1/jwks
+service-account-key-file: [/var/lib/k0s/pki/sa.pub]
+service-account-lookup: true
+service-account-max-token-expiration: 0s
+service-account-signing-endpoint: 
+service-account-signing-key-file: /var/lib/k0s/pki/sa.key
+service-cluster-ip-range: 10.96.0.0/12
+service-node-port-range: 30000-32767
+show-hidden-metrics-for-version: 
+shutdown-delay-duration: 0s
+shutdown-send-retry-after: false
+shutdown-watch-termination-grace-period: 18s
+storage-backend: 
+storage-initialization-timeout: 1m0s
+storage-media-type: application/vnd.kubernetes.protobuf
+strict-transport-security-directives: []
+tls-cert-file: /var/lib/k0s/pki/server.crt
+tls-cipher-suites: [TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256]
+tls-curve-preferences: []
+tls-min-version: VersionTLS12
+tls-private-key-file: /var/lib/k0s/pki/server.key
+tls-sni-cert-key: []
+token-auth-file: 
+tracing-config-file: 
+v: 1
+version: false
+vmodule: 
+watch-cache: true
+watch-cache-sizes: [events.events.k8s.io#0,events#0]

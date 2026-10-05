@@ -1,0 +1,9 @@
+HTTP/2 200 
+audit-id: 80944e0b-913c-4fe8-99f2-2658be4fe0db
+cache-control: public, max-age=3600
+content-type: application/jwk-set+json
+x-kubernetes-pf-flowschema-uid: e20b4333-08d0-4a30-a1b7-3d49f4f4236a
+x-kubernetes-pf-prioritylevel-uid: 90254968-33a4-4b28-8206-14db108b68bd
+content-length: 462
+date: Mon, 05 Oct 2026 18:19:10 GMT
+

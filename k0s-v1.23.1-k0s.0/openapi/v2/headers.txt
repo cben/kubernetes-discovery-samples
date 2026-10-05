@@ -1,0 +1,12 @@
+HTTP/2 200 
+accept-ranges: bytes
+audit-id: 8da868cd-d3b0-4e13-980c-888b8da1d7ea
+cache-control: no-cache, private
+content-type: text/plain; charset=utf-8
+etag: "70EE480B38A11014BD792CB0E44439E283AF9A25873E1A143FB649BA44A84D9B6828C53D7779AC9B11978198D6DC98143470B67AD7A566E29BE3E34F2AD8CB35"
+last-modified: Mon, 05 Oct 2026 12:16:43 GMT
+vary: Accept-Encoding
+vary: Accept
+content-length: 3315312
+date: Mon, 05 Oct 2026 12:16:49 GMT
+

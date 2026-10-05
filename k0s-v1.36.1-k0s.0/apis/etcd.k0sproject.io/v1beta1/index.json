@@ -1,0 +1,35 @@
+{
+  "kind": "APIResourceList",
+  "apiVersion": "v1",
+  "groupVersion": "etcd.k0sproject.io/v1beta1",
+  "resources": [
+    {
+      "name": "etcdmembers",
+      "singularName": "etcdmember",
+      "namespaced": false,
+      "kind": "EtcdMember",
+      "verbs": [
+        "delete",
+        "deletecollection",
+        "get",
+        "list",
+        "patch",
+        "create",
+        "update",
+        "watch"
+      ],
+      "storageVersionHash": "kJVyU3uEelQ="
+    },
+    {
+      "name": "etcdmembers/status",
+      "singularName": "",
+      "namespaced": false,
+      "kind": "EtcdMember",
+      "verbs": [
+        "get",
+        "patch",
+        "update"
+      ]
+    }
+  ]
+}

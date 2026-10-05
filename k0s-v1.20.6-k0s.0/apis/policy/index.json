@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "policy",
+  "versions": [
+    {
+      "groupVersion": "policy/v1beta1",
+      "version": "v1beta1"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "policy/v1beta1",
+    "version": "v1beta1"
+  }
+}

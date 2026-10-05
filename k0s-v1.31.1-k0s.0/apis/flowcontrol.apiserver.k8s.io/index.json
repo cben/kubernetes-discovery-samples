@@ -1,0 +1,19 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "flowcontrol.apiserver.k8s.io",
+  "versions": [
+    {
+      "groupVersion": "flowcontrol.apiserver.k8s.io/v1",
+      "version": "v1"
+    },
+    {
+      "groupVersion": "flowcontrol.apiserver.k8s.io/v1beta3",
+      "version": "v1beta3"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "flowcontrol.apiserver.k8s.io/v1",
+    "version": "v1"
+  }
+}

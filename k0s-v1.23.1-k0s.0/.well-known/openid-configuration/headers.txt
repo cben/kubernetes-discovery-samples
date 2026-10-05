@@ -1,0 +1,7 @@
+HTTP/2 200 
+audit-id: 674b68e1-7e39-4ad2-9beb-97b67ec402a0
+cache-control: public, max-age=3600
+content-type: application/json
+content-length: 229
+date: Mon, 05 Oct 2026 12:16:45 GMT
+

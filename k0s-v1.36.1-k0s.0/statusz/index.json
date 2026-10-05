@@ -1,0 +1,10 @@
+
+apiserver statusz
+Warning: This endpoint is not meant to be machine parseable, has no formatting compatibility guarantees and is for debugging purposes only.
+
+Started: Mon Oct  5 18:41:42 UTC 2026
+Up: 0 hr 00 min 12 sec
+Go version: go1.26.4
+Binary version: 1.36.1+k0s
+Emulation version: 1.36
+Paths: /flagz /healthz /livez /metrics /readyz /statusz /version

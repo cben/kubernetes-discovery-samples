@@ -1,0 +1,15 @@
+{
+  "kind": "APIGroup",
+  "apiVersion": "v1",
+  "name": "autopilot.k0sproject.io",
+  "versions": [
+    {
+      "groupVersion": "autopilot.k0sproject.io/v1beta2",
+      "version": "v1beta2"
+    }
+  ],
+  "preferredVersion": {
+    "groupVersion": "autopilot.k0sproject.io/v1beta2",
+    "version": "v1beta2"
+  }
+}
